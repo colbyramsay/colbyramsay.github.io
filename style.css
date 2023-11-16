@@ -12,7 +12,7 @@ body {
     height: 54px;
     font-size: 18px;
     font-weight: 900;
-    background: pink;
+    background: whitesmoke;
     padding-left: 16px;
     padding-right: 16px;
     display: flex;
@@ -30,12 +30,23 @@ ul {
 
 a {
     text-decoration: none; /* Remove link underline */
-    color: gray;
+    color: black;
 }
 
 .lower-header {
+    font-weight: bold;
+    font-size: xx-large;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 150px;
+}
+
+.main-image {
+    background-color: whitesmoke;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 }
