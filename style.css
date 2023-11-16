@@ -9,8 +9,8 @@ body {
 }
 
 .header {
-    height: 72px;
-    font-size: 32px;
+    height: 54px;
+    font-size: 18px;
     font-weight: 900;
     background: pink;
     padding-left: 16px;
@@ -26,6 +26,11 @@ ul {
     padding: 0;
     display: flex;
     gap: 16px;
+}
+
+a {
+    text-decoration: none; /* Remove link underline */
+    color: gray;
 }
 
 .lower-header {
