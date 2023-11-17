@@ -3,7 +3,6 @@
 }*/
 
 body {
-    font-family: sans-serif;
     margin: 0; /* Remove margin, space around all elements */
     min-height: 100vh; /* the initial body height will take 100% of the viewport height */
     display: flex;
