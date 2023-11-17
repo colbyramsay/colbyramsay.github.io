@@ -1,6 +1,6 @@
-* {
+/* {
   border: .5px solid pink;
-}
+}*/
 
 body {
     font-family: sans-serif;
@@ -14,7 +14,7 @@ body {
 .header {
     height: 54px;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: bold;
     background: whitesmoke;
     padding-left: 16px;
     padding-right: 16px;
@@ -24,9 +24,10 @@ body {
 }
 
 .footer {
-    height: 54px;
+    height: 72px;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: bold;
+    background: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,6 +41,12 @@ ul {
     gap: 16px;
 }
 
+ul.footer-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
 a {
     text-decoration: none; /* Remove link underline */
     color: black;
@@ -51,11 +58,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 100px;
 }
 
 .main-image {
     background-color: whitesmoke;
+    border-radius: 18px;
     font-style: oblique;
     display: flex;
     justify-content: center;
