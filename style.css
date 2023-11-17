@@ -62,17 +62,17 @@ a {
 
 .main-image {
     background-color: whitesmoke;
+    background-image: repeating-radial-gradient(red, yellow 10%, green 20%);
     border-radius: 18px;
     font-style: oblique;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 400px;
 }
 
-.container {
+.mid-section {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin: 50px;
+    margin: 0px 50px 50px 50px;
 }
