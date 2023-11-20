@@ -39,7 +39,7 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 16px;
+    gap: 18px;
 }
 
 ul.footer-list {
@@ -59,7 +59,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 117px;
+}
+
+.mid-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 45px 0 45px;
 }
 
 .home-bg-image {
@@ -77,7 +83,26 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 540px;
+}
+
+.design-bg-image {
+    /*
+    background-image: repeating-radial-gradient(red, yellow 10%, green 20%);
+    background-image: url("./img/colbyramsay-about-me-art-1024px.gif");
+    background-color: whitesmoke;
+    background: #ff0;
+    */
+    background-image: repeating-radial-gradient(black, white 18%, black 36%);
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    font-style: oblique;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
 }
 
 .music-bg-image {
@@ -95,30 +120,5 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-}
-
-.design-bg-image {
-    /*
-    background-image: repeating-radial-gradient(red, yellow 10%, green 20%);
-    background-image: url("./img/colbyramsay-about-me-art-1024px.gif");
-    background-color: whitesmoke;
-    background: #ff0;
-    */
-    background: #ff0;
-    background-size: cover;
-    background-position: center;
-    border-radius: 18px;
-    font-style: oblique;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-}
-
-.mid-section {
-    display: flex;
-    flex-direction: column;
-    margin: 0 36px 0 36px;
+    height: 540px;
 }
