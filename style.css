@@ -8,15 +8,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: monospace;
 }
+
 
 .header {
     height: 54px;
     font-size: 18px;
-    font-weight: bold;
-    background: whitesmoke;
-    padding-left: 16px;
-    padding-right: 16px;
+    font-weight: normal;
+    background: none;
+    padding-left: 27px;
+    padding-right: 27px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,8 +27,8 @@ body {
 .footer {
     height: 72px;
     font-size: 18px;
-    font-weight: bold;
-    background: whitesmoke;
+    font-weight: normal;
+    background: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +54,7 @@ a {
 }
 
 .lower-header {
-    font-weight: bold;
+    font-weight: normal;
     font-size: xx-large;
     display: flex;
     justify-content: center;
@@ -71,6 +73,7 @@ a {
     background-position: center;
     border-radius: 18px;
     font-style: oblique;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +91,7 @@ a {
     background-position: center;
     border-radius: 18px;
     font-style: oblique;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +110,7 @@ a {
     background-position: center;
     border-radius: 18px;
     font-style: oblique;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,5 +120,5 @@ a {
 .mid-section {
     display: flex;
     flex-direction: column;
-    margin: 0px 50px 50px 50px;
+    margin: 0 36px 0 36px;
 }
