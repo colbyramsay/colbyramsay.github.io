@@ -62,11 +62,11 @@ a {
 
 .main-image {
     /*
-    background-color: whitesmoke;
     background-image: repeating-radial-gradient(red, yellow 10%, green 20%);
     background: #ff0;
     */
     background-image: url("./img/colbyramsay-about-me-1024px.gif");
+    background-color: whitesmoke;
     background-size: cover;
     background-position: center;
     border-radius: 18px;
