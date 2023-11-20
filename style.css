@@ -60,13 +60,48 @@ a {
     height: 100px;
 }
 
-.main-image {
+.home-bg-image {
     /*
     background-image: repeating-radial-gradient(red, yellow 10%, green 20%);
     background: #ff0;
     */
     background-image: url("./img/colbyramsay-about-me-1024px.gif");
     background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.music-bg-image {
+    /*
+    background-image: repeating-radial-gradient(red, yellow 10%, green 20%);
+    background: #ff0;
+    */
+    background-image: url("./img/colbyramsay-about-me-keyboard-1024px.gif");
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.design-bg-image {
+    /*
+    background-image: repeating-radial-gradient(red, yellow 10%, green 20%);
+    background-image: url("./img/colbyramsay-about-me-art-1024px.gif");
+    background-color: whitesmoke;
+    background: #ff0;
+    */
+    background: #ff0;
     background-size: cover;
     background-position: center;
     border-radius: 18px;
