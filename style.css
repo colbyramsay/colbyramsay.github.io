@@ -30,6 +30,11 @@ body {
     justify-content: space-between;
 }
 
+.right-links {
+    display: flex;
+    gap: 18px;
+}
+
 .footer {
     height: 72px;
     font-size: 18px;
