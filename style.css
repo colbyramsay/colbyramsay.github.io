@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    min-height: 100vh; /* the initial body height will take 100% of the viewport height */
+    min-height: 100vh; /* initial body height = 100% of vh: "viewport height" */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -89,53 +89,27 @@ button:hover {
     margin: 0 36px 9px 36px;
 }
 
-.home-bg-image {
-    /*
-    background-image: repeating-radial-gradient(red, yellow 10%, green 20%);
-    background: #ff0;
-    */
+.hero-image {
+    background-color: gainsboro;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+}
+
+.hello-image {
     background-image: url("./img/colbyramsay-about-me-1024px.gif");
-    background-color: whitesmoke;
-    background-size: cover;
-    background-position: center;
-    border-radius: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 540px;
 }
 
-.design-bg-image {
-    /*
-    background-image: repeating-radial-gradient(red, yellow 10%, green 20%);
-    background-image: url("./img/colbyramsay-about-me-art-1024px.gif");
-    background-color: whitesmoke;
-    background: #ff0;
-    */
+.design-image {
     background-image: repeating-radial-gradient(black, white 18%, black 36%);
-    background-size: cover;
-    background-position: center;
-    border-radius: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 540px;
 }
 
-.music-bg-image {
-    /*
-    background-image: repeating-radial-gradient(red, yellow 10%, green 20%);
-    background: #ff0;
-    */
+.music-image {
     background-image: url("./img/colbyramsay-about-me-keyboard-1024px.gif");
-    background-color: whitesmoke;
-    background-size: cover;
-    background-position: center;
-    border-radius: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 540px;
 }
 
 .footer {
