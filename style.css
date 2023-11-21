@@ -55,8 +55,8 @@ ul.footer-list {
 }
 
 a {
-    text-decoration: none; /* Remove link underline */
-    color: black;
+    text-decoration: underline; /* Remove link underline */
+    color: gainsboro;
 }
 
 .lower-header {
