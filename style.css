@@ -1,9 +1,9 @@
 /* {
-  border: .5px solid pink;
+  border: 1px solid pink;
 }*/
 
 body {
-    margin: 0; /* Remove margin, space around all elements */
+    margin: 0;
     min-height: 100vh; /* the initial body height will take 100% of the viewport height */
     display: flex;
     flex-direction: column;
@@ -44,13 +44,23 @@ ul {
 }
 
 a {
-    text-decoration: none; /* Remove link underline */
+    text-decoration: none;
     color: hotpink;
 }
 
 a:hover {
-    text-decoration: wavy;
     color: gainsboro;
+}
+
+button {
+    color: white;
+    background-color: hotpink;
+    border-radius: 3px;
+    border: none;
+}
+
+button:hover {
+    background-color: gainsboro;
 }
 
 .lower-header {
@@ -62,11 +72,21 @@ a:hover {
     height: 117px;
 }
 
+.pink-text {
+    color: hotpink;
+    font-style: oblique;
+}
+
+.highlight-text {
+    background-color: white;
+    font-size: large;
+    border-radius: 3px;
+}
+
 .mid-section {
     display: flex;
     flex-direction: column;
     margin: 0 36px 9px 36px;
-    color: hotpink;
 }
 
 .home-bg-image {
@@ -79,8 +99,6 @@ a:hover {
     background-size: cover;
     background-position: center;
     border-radius: 18px;
-    font-style: oblique;
-    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,8 +116,6 @@ a:hover {
     background-size: cover;
     background-position: center;
     border-radius: 18px;
-    font-style: oblique;
-    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,8 +132,6 @@ a:hover {
     background-size: cover;
     background-position: center;
     border-radius: 18px;
-    font-style: oblique;
-    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +140,7 @@ a:hover {
 
 .footer {
     height: 72px;
-    font-size: 18px;
+    font-size: large;
     font-weight: normal;
     background: none;
     display: flex;
