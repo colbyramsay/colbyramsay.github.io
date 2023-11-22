@@ -58,10 +58,14 @@ button {
     border-radius: 3px;
     border: none;
 }
-
-button:hover {
-    background-color: gainsboro;
-}
+ 
+@media (hover: hover) { 
+    button:hover { 
+        /*Add hover effect to button 
+        on hover enabled devices*/ 
+        background-color: gainsboro;
+    } 
+} 
 
 .lower-header {
     font-weight: normal;
