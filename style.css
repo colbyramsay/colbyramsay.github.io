@@ -45,7 +45,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: hotpink;
+    color: #FF52A1;
 }
 
 a:hover {
@@ -53,17 +53,19 @@ a:hover {
 }
 
 button {
-    color: white;
-    background-color: hotpink;
-    border-radius: 3px;
+    font-size:large;
+    background-color: transparent;
+    border-radius: 50%;
     border: none;
+    transition-duration: 0.3s;
+  
 }
  
 @media (hover: hover) { 
     button:hover { 
         /*Add hover effect to button 
         on hover enabled devices*/ 
-        background-color: gainsboro;
+        background-color: #FF52A1;
     } 
 } 
 
@@ -77,7 +79,7 @@ button {
 }
 
 .pink-text {
-    color: hotpink;
+    color: #FF52A1;
     font-style: oblique;
 }
 
