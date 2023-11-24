@@ -53,8 +53,8 @@ a:hover {
 }
 
 button {
-    font-size:large;
     background-color: transparent;
+    font-size:large;
     border-radius: 50%;
     border: none;
     transition-duration: 0.3s;
@@ -65,7 +65,7 @@ button {
     button:hover { 
         /*Add hover effect to button 
         on hover enabled devices*/ 
-        background-color: #FF52A1;
+        background-color: gainsboro;
     } 
 } 
 
