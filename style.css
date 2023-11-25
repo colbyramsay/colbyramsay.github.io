@@ -4,7 +4,8 @@
 
 body {
     margin: 0;
-    min-height: 100vh; /* initial body height = 100% of vh: "viewport height" */
+    min-height: 100vh; /* initial body height = 
+    100% of vh: "viewport height" */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,7 +47,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #FF52A1;
+    color: #ff3399;
 }
 
 a:hover {
@@ -80,7 +81,7 @@ button {
 }
 
 .pink-text {
-    color: #FF52A1;
+    color: #ff3399;
     font-style: oblique;
 }
 
