@@ -24,8 +24,8 @@ body {
     font-size: large;
     font-weight: normal;
     background: none;
-    padding-left: 27px;
-    padding-right: 27px;
+    padding-left: 18px;
+    padding-right: 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,8 +51,8 @@ a {
     filter: saturate(0);
     opacity: 0.77;
     transition-duration: 0.4s;
-    padding: 6px;
-    margin: 0 12px 0 0;
+    padding: 9px;
+    margin: 0 9px 0 0;
     border-radius: 6px;
 }
 
@@ -62,7 +62,7 @@ button {
     font-size: large;
     border: none;
     border-radius: 50%;
-    padding: 2px 4px 2px 4px;
+    padding: 2px 9px 2px 4px;
     transition-duration: 0.4s;
 }
  
@@ -115,14 +115,14 @@ span.underline {
 }
 
 .hero-image {
-    background-color: darkgray;
+    background-color: whitesmoke;
     background-size: cover;
     background-position: center;
     border-radius: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    min-height: 600px;
 }
 
 .hello-image {
@@ -153,4 +153,27 @@ span.underline {
 ul.footer-list {
     flex-direction: column;
     align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 32px;
+    gap: 24px;
+    font-style: oblique;
+}
+
+.card {
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+    background-image: url("./img/colbyramsay-about-me-keyboard-1024px.gif");
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
