@@ -9,9 +9,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: monospace;
+    font-family: none;
     background-color: white;
     color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }
 
 .header {
@@ -29,6 +34,7 @@ body {
 .right-links {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     font-style: oblique;
 }
 
@@ -41,25 +47,22 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
-    /* filter: saturate(0); */
-    opacity: 0.27;
+    color: #ff3399;
+    filter: saturate(0);
+    opacity: 0.77;
     transition-duration: 0.4s;
-    /* background-color: darkgray; */
     padding: 6px;
-    margin: 0 18px 0 0;
+    margin: 0 12px 0 0;
     border-radius: 6px;
 }
 
 button {
     background-color: transparent;
-    filter: saturate(0);
-    opacity: .81;
+    opacity: .77;
     font-size: large;
     border: none;
     border-radius: 50%;
     padding: 2px 4px 2px 4px;
-    /* background-color: lightgray; */
     transition-duration: 0.4s;
 }
  
@@ -68,15 +71,17 @@ button {
         /* Add hover effect to button 
         on hover enabled devices */ 
         opacity: 1;
-        filter: saturate(1);
-        /* filter: drop-shadow(0 0 9px #ff3399); */
     } 
 
     a:hover {
-        color: #ff3399;
         opacity: 1;
+        filter: saturate(1);
     }
 } 
+
+span.underline {
+    text-decoration: underline dotted;
+}
 
 .lower-header {
     font-weight: normal;
@@ -95,9 +100,9 @@ button {
 .highlight-text {
     background-color: white;
     font-size: large;
-    font-style: normal;
+    font-style: oblique;
     border-radius: 3px;
-    padding: 2px 0 4px 0;
+    padding: 2px 3px 4px 3px;
     opacity: 1;
     filter: blur(0px);
 }
@@ -133,7 +138,9 @@ button {
 
 .footer {
     height: 72px;
-    opacity: 0.27;
+    color: #ff3399;
+    filter: saturate(0);
+    opacity: 0.77;
     font-size: large;
     font-weight: normal;
     background: none;
@@ -145,14 +152,4 @@ button {
 ul.footer-list {
     flex-direction: column;
     align-items: center;
-}
-
-.dark-mode {
-    background-color: black;
-    color: white;
-
-    a {
-        color:aqua;
-    }
-    
 }
