@@ -48,9 +48,9 @@ a {
     color: #ff3399;
     transition-duration: 0.4s;
     /* background-color: darkgray; */
-    padding: 0;
+    padding: 6px;
     margin: 0 18px 0 0;
-    border-radius: 3px;
+    border-radius: 6px;
 }
 
 button {
@@ -59,7 +59,7 @@ button {
     border: none;
     border-radius: 50%;
     padding: 2px 4px 2px 4px;
-    background-color: lightgray;
+    /* background-color: lightgray; */
     transition-duration: 0.4s;
 }
  
@@ -67,13 +67,12 @@ button {
     button:hover { 
         /* Add hover effect to button 
         on hover enabled devices */ 
-        opacity: .5;
-        filter: drop-shadow(0 0 9px #ff3399);
+        filter: saturate(0);
+        /* filter: drop-shadow(0 0 9px #ff3399); */
     } 
 
     a:hover {
-        opacity: .5;
-        filter: drop-shadow(0 0 9px #ff3399);
+        filter: saturate(0)
     }
 } 
 
@@ -98,7 +97,7 @@ button {
     border-radius: 3px;
     padding: 2px 0 4px 0;
     opacity: 1;
-    filter: blur(1px);
+    filter: blur(0px);
 }
 
 .mid-section {
