@@ -99,6 +99,7 @@ span.underline {
 
 .highlight-text {
     background-color: white;
+    font-family: monospace;
     font-size: large;
     font-style: oblique;
     border-radius: 3px;
