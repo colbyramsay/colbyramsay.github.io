@@ -10,13 +10,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-family: monospace;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 .dark-mode {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .header {
@@ -34,7 +34,6 @@ body {
 .right-links {
     display: flex;
     align-items: center;
-    gap: 18px;
 }
 
 ul {
@@ -42,13 +41,15 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 18px;
 }
 
 a {
     text-decoration: none;
     color: #ff3399;
     transition-duration: 0.4s;
+    /* background-color: darkgray; */
+    padding: 0 18px 0 0;
+    border-radius: 3px;
 }
 
 button {
@@ -57,15 +58,15 @@ button {
     border: none;
     border-radius: 50%;
     padding: 2px 4px 0 4px;
-    background-color: whitesmoke;
+    background-color: darkgray;
     transition-duration: 0.4s;
   
 }
  
 @media (hover: hover) { 
     button:hover { 
-        /*Add hover effect to button 
-        on hover enabled devices*/ 
+        /* Add hover effect to button 
+        on hover enabled devices */ 
         opacity: .36;
     } 
 
@@ -101,7 +102,7 @@ button {
 }
 
 .hero-image {
-    background-color: gainsboro;
+    background-color: darkgray;
     background-size: cover;
     background-position: center;
     border-radius: 18px;
@@ -111,7 +112,7 @@ button {
     height: 540px;
 }
 
-.hello-image {
+/*.hello-image {
     background-image: url("./img/colbyramsay-about-me-1024px.gif");
 }
 
@@ -122,6 +123,7 @@ button {
 .music-image {
     background-image: url("./img/colbyramsay-about-me-keyboard-1024px.gif");
 }
+*/
 
 .footer {
     height: 72px;
@@ -136,5 +138,4 @@ button {
 ul.footer-list {
     flex-direction: column;
     align-items: center;
-    gap: 0px;
 }
