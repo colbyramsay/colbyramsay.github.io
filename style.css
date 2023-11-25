@@ -14,11 +14,6 @@ body {
     color: black;
 }
 
-.dark-mode {
-    background-color: black;
-    color: white;
-}
-
 .header {
     height: 54px;
     font-size: large;
@@ -34,6 +29,7 @@ body {
 .right-links {
     display: flex;
     align-items: center;
+    font-style: oblique;
 }
 
 ul {
@@ -45,7 +41,9 @@ ul {
 
 a {
     text-decoration: none;
-    color: #ff3399;
+    color: black;
+    /* filter: saturate(0); */
+    opacity: 0.27;
     transition-duration: 0.4s;
     /* background-color: darkgray; */
     padding: 6px;
@@ -55,6 +53,8 @@ a {
 
 button {
     background-color: transparent;
+    filter: saturate(0);
+    opacity: .81;
     font-size: large;
     border: none;
     border-radius: 50%;
@@ -67,12 +67,14 @@ button {
     button:hover { 
         /* Add hover effect to button 
         on hover enabled devices */ 
-        filter: saturate(0);
+        opacity: 1;
+        filter: saturate(1);
         /* filter: drop-shadow(0 0 9px #ff3399); */
     } 
 
     a:hover {
-        filter: saturate(0)
+        color: #ff3399;
+        opacity: 1;
     }
 } 
 
@@ -131,6 +133,7 @@ button {
 
 .footer {
     height: 72px;
+    opacity: 0.27;
     font-size: large;
     font-weight: normal;
     background: none;
@@ -142,4 +145,14 @@ button {
 ul.footer-list {
     flex-direction: column;
     align-items: center;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+
+    a {
+        color:aqua;
+    }
+    
 }
