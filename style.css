@@ -1,6 +1,6 @@
-/* {
+* {
   border: 1px solid pink;
-}*/
+}
 
 body {
     margin: 0;
@@ -10,13 +10,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-family: monospace;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .dark-mode {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 .header {
@@ -48,7 +48,8 @@ a {
     color: #ff3399;
     transition-duration: 0.4s;
     /* background-color: darkgray; */
-    padding: 0 18px 0 0;
+    padding: 0;
+    margin: 0 18px 0 0;
     border-radius: 3px;
 }
 
@@ -60,7 +61,6 @@ button {
     padding: 2px 4px 0 4px;
     background-color: darkgray;
     transition-duration: 0.4s;
-  
 }
  
 @media (hover: hover) { 
@@ -68,10 +68,11 @@ button {
         /* Add hover effect to button 
         on hover enabled devices */ 
         opacity: .36;
+        filter: drop-shadow(3px 3px 3px #ff3399);
     } 
 
     a:hover {
-        opacity: .36;
+        filter: drop-shadow(-3px -3px 3px #ff3399);
     }
 } 
 
@@ -92,7 +93,11 @@ button {
 .highlight-text {
     background-color: white;
     font-size: large;
+    font-style: normal;
     border-radius: 3px;
+    padding: 2px 0 4px 0;
+    opacity: 1;
+    filter: blur(1px);
 }
 
 .mid-section {
@@ -112,7 +117,7 @@ button {
     height: 540px;
 }
 
-/*.hello-image {
+.hello-image {
     background-image: url("./img/colbyramsay-about-me-1024px.gif");
 }
 
@@ -123,7 +128,6 @@ button {
 .music-image {
     background-image: url("./img/colbyramsay-about-me-keyboard-1024px.gif");
 }
-*/
 
 .footer {
     height: 72px;
