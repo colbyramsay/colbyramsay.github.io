@@ -58,7 +58,7 @@ button {
     font-size: large;
     border: none;
     border-radius: 50%;
-    padding: 2px 4px 0 4px;
+    padding: 2px 4px 2px 4px;
     background-color: lightgray;
     transition-duration: 0.4s;
 }
@@ -83,7 +83,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 117px;
+    height: 54px;
 }
 
 .pink-text {
@@ -104,7 +104,7 @@ button {
 .mid-section {
     display: flex;
     flex-direction: column;
-    margin: 0 36px 9px 36px;
+    margin: 18px 36px 9px 36px;
 }
 
 .hero-image {
@@ -115,7 +115,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 540px;
+    height: 600px;
 }
 
 .hello-image {
