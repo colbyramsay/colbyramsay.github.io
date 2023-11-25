@@ -48,18 +48,17 @@ ul {
 a {
     text-decoration: none;
     color: #ff3399;
-}
-
-a:hover {
-    color: gainsboro;
+    transition-duration: 0.4s;
 }
 
 button {
     background-color: transparent;
     font-size: large;
-    border-radius: 50%;
     border: none;
-    transition-duration: 0.3s;
+    border-radius: 50%;
+    padding: 2px 4px 0 4px;
+    background-color: whitesmoke;
+    transition-duration: 0.4s;
   
 }
  
@@ -67,8 +66,12 @@ button {
     button:hover { 
         /*Add hover effect to button 
         on hover enabled devices*/ 
-        background-color: gainsboro;
+        opacity: .36;
     } 
+
+    a:hover {
+        opacity: .36;
+    }
 } 
 
 .lower-header {
