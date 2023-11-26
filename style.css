@@ -103,11 +103,11 @@ span.underline {
 .highlight-text {
     background-color: white;
     color: #ff3399;
-    font-family: monospace;
+    font-family: none;
     font-size: large;
-    /* font-style: oblique; */
+    font-style: oblique;
     border-radius: 3px;
-    padding: 2px 3px 4px 3px;
+    padding: 3px;
     opacity: 1;
     filter: blur(0px);
 }
@@ -115,7 +115,7 @@ span.underline {
 .mid-section {
     display: flex;
     flex-direction: column;
-    margin: 18px 18px 18px 18px;
+    margin: 18px;
 }
 
 .hero-image {
@@ -171,27 +171,31 @@ ul.footer-list {
 .card {
     /* border: 1px solid #eee; */
     background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 2px 4px 0px 0px rgba(0,0,0,1);
-    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplements.jpg");
+    box-shadow: 2px 4px 4px 0px rgba(0,0,0,.2);
+    background-color: white;
     border-radius: 18px;
     width: 270px;
-    height: 180px;
+    height: 145px;
     padding: 9px;
-    margin: 18px;
+    margin: 9px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .card-1 {
-    /* border: 1px solid black; */
-    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplements.jpg");
+    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplements-1920px.jpg");
+}
+
+.card-2 {
+    background-image: url("./img/design/one-world-two-eyes/colbyramsay-logo-design-one-world-two-eyes-1920px.png");
 }
 
 a.card-links {
     background-color: white;
-    box-shadow: 2px 4px 4px 0px rgba(0,0,0,.5);
+    box-shadow: 2px 4px 4px 0px rgba(0,0,0,.7);
     opacity: 1;
     filter: saturate(0);
     font-family: none;
