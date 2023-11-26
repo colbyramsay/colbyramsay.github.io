@@ -6,7 +6,7 @@ body {
     100% of vh: "viewport height" */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     font-family: none;
     background-color: white;
     color: black;
@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-    height: 54px;
+    height: 63px;
     font-size: large;
     font-weight: normal;
     background: none;
@@ -60,7 +60,7 @@ button {
     font-size: large;
     border: none;
     border-radius: 50%;
-    padding: 2px 9px 2px 4px;
+    padding: 2px 9px 2px 9px;
     transition-duration: 0.4s;
 }
  
@@ -115,7 +115,7 @@ span.underline {
 .mid-section {
     display: flex;
     flex-direction: column;
-    margin: 18px 18px 9px 18px;
+    margin: 18px 18px 18px 18px;
 }
 
 .hero-image {
@@ -142,7 +142,7 @@ span.underline {
 }
 
 .footer {
-    height: 72px;
+    height: 81px;
     color: #ff3399;
     filter: saturate(0);
     opacity: 0.77;
@@ -175,7 +175,7 @@ ul.footer-list {
     box-shadow: 2px 4px 0px 0px rgba(0,0,0,1);
     background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplements.jpg");
     border-radius: 18px;
-    width: 300px;
+    width: 270px;
     height: 180px;
     padding: 9px;
     margin: 18px;
