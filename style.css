@@ -185,6 +185,18 @@ ul.footer-list {
     justify-content: center;
 }
 
+a.card-links {
+    background-color: white;
+    box-shadow: 2px 4px 4px 0px rgba(0,0,0,.7);
+    opacity: 1;
+    filter: saturate(0);
+    font-family: none;
+    font-size: normal;
+    font-style: none;
+    /*border-radius: 3px;*/
+    /*padding: 2px 3px 4px 3px;*/
+}
+
 .card-1 {
     background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplements-1920px.jpg");
 }
@@ -193,14 +205,54 @@ ul.footer-list {
     background-image: url("./img/design/one-world-two-eyes/colbyramsay-logo-design-one-world-two-eyes-1920px.png");
 }
 
-a.card-links {
-    background-color: white;
-    box-shadow: 2px 4px 4px 0px rgba(0,0,0,.7);
-    opacity: 1;
-    filter: saturate(0);
-    font-family: none;
-    font-size: large;
-    font-style: none;
-    /*border-radius: 3px;*/
-    /*padding: 2px 3px 4px 3px;*/
+.card-3 {
+    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+}
+
+.card-4 {
+    background-image: url("./img/design/truvai/colbyramsay-packaging-design-truvai-jewelry-box-open-1920px.jpg");
+}
+
+.card-5 {
+    background-image: url("./img/design/treats/colbyramsay-packaging-design-3d-render-hemp-dog-treats-1920px.jpg");
+}
+
+.card-6 {
+    background-image: url("./img/design/skincare-2/colbyramsay-label-design-3d-render-hemp-fix-lip-balm-and-body-butter-1920px.jpg");
+}
+
+.card-7 {
+    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+}
+
+.card-8 {
+    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+}
+
+.card-9 {
+    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+}
+
+.card-10 {
+    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+}
+
+.card-11 {
+    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+}
+
+.card-12 {
+    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+}
+
+.card-13 {
+    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+}
+
+.card-14 {
+    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+}
+
+.card-15 {
+    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
 }
