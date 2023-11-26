@@ -51,7 +51,7 @@ a {
     transition-duration: 0.4s;
     padding: 9px;
     margin: 0 9px 0 0;
-    border-radius: 6px;
+    border-radius: 9px;
 }
 
 button {
@@ -119,7 +119,7 @@ span.underline {
 }
 
 .hero-image {
-    background-color: whitesmoke;
+    background-color: white;
     /* background-size: cover; */
     background-position: center;
     border-radius: 18px;
@@ -173,13 +173,13 @@ ul.footer-list {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 2px 4px 4px 0px rgba(0,0,0,.2);
+    /* box-shadow: 2px 4px 4px 0px rgba(0,0,0,.2); */
     background-color: white;
     border-radius: 18px;
-    width: 270px;
+    width: 272px;
     height: 145px;
     padding: 9px;
-    margin: 9px;
+    margin: 27px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,7 +187,7 @@ ul.footer-list {
 
 a.card-links {
     background-color: white;
-    box-shadow: 2px 4px 4px 0px rgba(0,0,0,.7);
+    box-shadow: 2px 4px 4px 0px rgba(0,0,0,.33);
     opacity: 1;
     filter: saturate(0);
     font-family: none;
@@ -222,37 +222,37 @@ a.card-links {
 }
 
 .card-7 {
-    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+    background-image: url("./img/design/tinctures-1/colbyramsay-label-design-3d-render-hemp-tinctures-original-1920px.jpg");
 }
 
 .card-8 {
-    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+    background-image: url("./img/design/bath-bombs/colbyramsay-3d-render-bath-bombs-2-1920px.jpg");
 }
 
 .card-9 {
-    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+    background-image: url("./img/design/gummies/colbyramsay-packaging-design-3d-render-hemp-gummies-1920px.jpg");
 }
 
 .card-10 {
-    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+    background-image: url("./img/design/tinctures-2/colbyramsay-label-design-3d-render-hemp-pet-tinctures-1920px.jpg");
 }
 
 .card-11 {
-    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+    background-image: url("./img/design/clocks-1/colbyramsay-product-design-minimalist-steel-bar-circle-clock-white-1920px.jpg");
 }
 
 .card-12 {
-    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+    background-image: url("./img/design/clocks-2/colbyramsay-product-design-wooden-dinosaur-clock-red-1920px.jpg");
 }
 
 .card-13 {
-    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+    background-image: url("./img/design/lillian-sinclair/colbyramsay-logo-design-branding-lillian-sinclair-stamp-1920px.jpg");
 }
 
 .card-14 {
-    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+    background-image: url("./img/design/the-ok-market/colbyramsay-web-design-the-ok-market-1920px.jpg");
 }
 
 .card-15 {
-    background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
+    background-image: url("./img/design/bar-stools/colbyramsay-industrial-design-fabrication-brewery-bar-stools-4-1920px.jpg");
 }
