@@ -1,6 +1,4 @@
-/* {
-  border: 1px solid pink;
-}*/
+/* { border: 1px solid pink; } */
 
 body {
     margin: 0;
@@ -77,6 +75,11 @@ button {
         opacity: 1;
         filter: saturate(1);
     }
+
+    a.card-links:hover {
+        opacity: 1;
+        filter: saturate(1);
+    }
 } 
 
 span.underline {
@@ -99,9 +102,10 @@ span.underline {
 
 .highlight-text {
     background-color: white;
+    color: #ff3399;
     font-family: monospace;
     font-size: large;
-    font-style: oblique;
+    /* font-style: oblique; */
     border-radius: 3px;
     padding: 2px 3px 4px 3px;
     opacity: 1;
@@ -111,12 +115,12 @@ span.underline {
 .mid-section {
     display: flex;
     flex-direction: column;
-    margin: 18px 36px 9px 36px;
+    margin: 18px 18px 9px 18px;
 }
 
 .hero-image {
     background-color: whitesmoke;
-    background-size: cover;
+    /* background-size: cover; */
     background-position: center;
     border-radius: 18px;
     display: flex;
@@ -126,15 +130,15 @@ span.underline {
 }
 
 .hello-image {
-    background-image: url("./img/colbyramsay-about-me-1024px.gif");
+    background-image: url("./img/about/colbyramsay-about-me-1024px.gif");
 }
 
 .design-image {
-    background-image: repeating-radial-gradient(black, white 18%, black 36%);
+    background-image: repeating-radial-gradient(whitesmoke, white 18%, whitesmoke 36%);
 }
 
 .music-image {
-    background-image: url("./img/colbyramsay-about-me-keyboard-1024px.gif");
+    background-image: url("./img/about/colbyramsay-about-me-keyboard-1024px.gif");
 }
 
 .footer {
@@ -159,21 +163,40 @@ ul.footer-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 32px;
-    gap: 24px;
+    padding: 18px;
+    gap: 0;
     font-style: oblique;
 }
 
 .card {
-    border: 1px solid #eee;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-    border-radius: 4px;
-    background-image: url("./img/colbyramsay-about-me-keyboard-1024px.gif");
-    width: 250px;
-    height: 250px;
-    padding: 10px;
-    margin: 0px;
+    /* border: 1px solid #eee; */
+    background-size: contain;
+    background-position: center;
+    box-shadow: 2px 4px 0px 0px rgba(0,0,0,1);
+    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplements.jpg");
+    border-radius: 18px;
+    width: 300px;
+    height: 180px;
+    padding: 9px;
+    margin: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card-1 {
+    /* border: 1px solid black; */
+    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplements.jpg");
+}
+
+a.card-links {
+    background-color: white;
+    box-shadow: 2px 4px 4px 0px rgba(0,0,0,.5);
+    opacity: 1;
+    filter: saturate(0);
+    font-family: none;
+    font-size: large;
+    font-style: none;
+    /*border-radius: 3px;*/
+    /*padding: 2px 3px 4px 3px;*/
 }
