@@ -49,9 +49,9 @@ a {
     filter: saturate(0);
     opacity: 0.77;
     transition-duration: 0.4s;
-    padding: 9px;
+    padding: 6px 18px 6px 18px;
     margin: 0 9px 0 0;
-    border-radius: 9px;
+    border-radius: 18px;
 }
 
 button {
@@ -107,7 +107,7 @@ span.underline {
     font-size: large;
     font-style: oblique;
     border-radius: 3px;
-    padding: 3px;
+    padding: 3px 9px 3px 9px;
     opacity: 1;
     filter: blur(0px);
 }
