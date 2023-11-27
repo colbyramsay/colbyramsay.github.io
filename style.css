@@ -168,6 +168,16 @@ ul.footer-list {
     font-style: oblique;
 }
 
+.cards-x {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 18px;
+    gap: 0;
+    font-style: oblique;
+}
+
 .card {
     /* border: 1px solid #eee; */
     background-size: contain;
@@ -180,6 +190,23 @@ ul.footer-list {
     height: 145px;
     padding: 9px;
     margin: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-x {
+    /* border: 1px solid #eee; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* box-shadow: 2px 4px 4px 0px rgba(0,0,0,.2); */
+    background-color: white;
+    border-radius: 18px;
+    width: 1088px;
+    height: 580px;
+    padding: 9px;
+    margin: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,4 +282,16 @@ a.card-links {
 
 .card-15 {
     background-image: url("./img/design/bar-stools/colbyramsay-industrial-design-fabrication-brewery-bar-stools-4-1920px.jpg");
+}
+
+.card-sup-1 {
+    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplements-1920px.jpg");
+}
+
+.card-sup-2 {
+    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplement-turkey-tail-mushroom-1920px.jpg");
+}
+
+.card-sup-3 {
+    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplement-atlantic-kelp-1920px.jpg");
 }
