@@ -1,5 +1,4 @@
-*{ border: 1px solid pink; }
-
+/*{ border: 1px solid pink; }*/
 body {
     margin: 0;
     min-height: 100vh; /* initial body height = 
@@ -193,7 +192,7 @@ ul.footer-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 36px;
+    margin: 9px 0 0 0;
 }
 
 .card {
@@ -205,7 +204,7 @@ ul.footer-list {
     width: 350px;
     height: 197px;
     padding: 0;
-    margin: 36px;
+    margin: 27px;
     display: flex;
     align-items: center;
     justify-content: center;
