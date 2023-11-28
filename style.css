@@ -1,4 +1,4 @@
-/* { border: 1px solid pink; } */
+/*{ border: 1px solid pink; }*/
 
 body {
     margin: 0;
@@ -124,6 +124,12 @@ span.underline {
     margin: 0;
 }
 
+.mid-section-no-margin-test {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
 .hero-image {
     background-color: white;
     /* background-size: cover; */
@@ -133,6 +139,19 @@ span.underline {
     justify-content: center;
     align-items: center;
     min-height: 600px;
+}
+
+.hero-image-contain {
+    background-color: white;
+    background-image: url("./img/design/treats/colbyramsay-packaging-design-3d-render-hemp-dog-treats-1920px.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
 }
 
 .hello-image {
@@ -145,6 +164,10 @@ span.underline {
 
 .music-image {
     background-image: url("./img/about/colbyramsay-about-me-keyboard-1024px.gif");
+}
+
+.treat-image {
+    background-image: url(".img/design/colbyramsay-packaging-design-3d-render-hemp-dog-treats-1920px");
 }
 
 .footer {
@@ -175,11 +198,12 @@ ul.footer-list {
 
 .cards-x {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    padding: 18px;
+    padding: 0;
+    margin: 0;
     font-style: oblique;
+    flex: .5;
 }
 
 .card {
@@ -199,22 +223,21 @@ ul.footer-list {
     justify-content: center;
 }
 
+
 .card-x {
     /* border: 1px solid #eee; */
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     /* box-shadow: 2px 4px 4px 0px rgba(0,0,0,.2); */
     background-color: white;
     border-radius: 18px;
-    width: 1088px;
-    height: 580px;
-    padding: 9px;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-width: 350px;
+    min-height: 197px;
+    padding: 0 0 117px 0;
+    margin: 9px;
 }
+
 
 a.card-links {
     background-color: white;
