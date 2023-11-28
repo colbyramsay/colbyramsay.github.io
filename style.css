@@ -126,8 +126,10 @@ span.underline {
 
 .mid-section-no-margin-test {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     margin: 0;
+    padding: 0;
+    justify-content: center;
 }
 
 .hero-image {
@@ -143,15 +145,14 @@ span.underline {
 
 .hero-image-contain {
     background-color: white;
-    background-image: url("./img/design/treats/colbyramsay-packaging-design-3d-render-hemp-dog-treats-1920px.jpg");
+    
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
+    height: 360px;
+    width: 640px;
+    margin: 27px;
 }
 
 .hello-image {
