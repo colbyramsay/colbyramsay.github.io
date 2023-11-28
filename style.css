@@ -41,6 +41,18 @@ body {
     font-style: oblique;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 18px 0 18px;
+}
+
+.nav-links {
+    font-style: oblique;
+    font-size: large;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -161,11 +173,7 @@ button {
 
 .footer {
     height: 81px;
-    color: #ff3399;
-    filter: saturate(0);
-    opacity: 0.77;
     font-size: large;
-    font-weight: normal;
     background: none;
     display: flex;
     align-items: center;
@@ -294,4 +302,32 @@ a.card-links {
 
 .card-bar-stools {
     background-image: url("./img/design/bar-stools/colbyramsay-industrial-design-fabrication-brewery-bar-stools-4-1920px.jpg");
+}
+
+.arrow {
+    border: solid #ff3399;
+    border-width: 0 1px 1px 0;
+    display:inline-block;
+    padding: 5px;
+    margin: 0;
+  }
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
