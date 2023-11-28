@@ -1,4 +1,5 @@
-/*{ border: 1px solid pink; }*/
+*{ border: 1px solid pink; }
+
 body {
     margin: 0;
     min-height: 100vh; /* initial body height = 
@@ -7,6 +8,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-family: none;
+    font-style: none;
     background-color: white;
     color: black;
 }
@@ -53,6 +55,10 @@ a {
     border-radius: 18px;
 }
 
+p {
+    text-align: center;
+}
+
 button {
     background-color: transparent;
     opacity: .77;
@@ -81,8 +87,12 @@ button {
     }
 } 
 
-span.underline {
+.underline {
     text-decoration: underline dotted;
+}
+
+.oblique {
+    font-style: oblique;
 }
 
 .banner {
@@ -91,8 +101,14 @@ span.underline {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 36px 0 36px;
     height: 81px;
 }
+
+.banner-large {
+    height: 135px;
+}
+
 
 .pink-text {
     color: #ff3399;
@@ -111,26 +127,6 @@ span.underline {
     filter: blur(0px);
 }
 
-.mid-section {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-}
-
-.mid-section-no-margin {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-
-.mid-section-no-margin-test {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-}
-
 .hero-container {
     background-color: white;
     background-position: center;
@@ -141,17 +137,6 @@ span.underline {
     align-items: center;
     min-height: 600px;
     margin: 18px;
-}
-
-.hero-image-contain {
-    background-color: white;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 18px;
-    height: 360px;
-    width: 640px;
-    margin: 27px;
 }
 
 .hello-image {
@@ -210,6 +195,17 @@ ul.footer-list {
     justify-content: center;
 }
 
+.card-large {
+    background-color: white;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+    height: 360px;
+    width: 640px;
+    margin: 27px;
+}
+
 a.card-links {
     background-color: white;
     box-shadow: 2px 4px 4px 0px rgba(0,0,0,.33);
@@ -220,62 +216,78 @@ a.card-links {
     font-style: oblique;
 }
 
-.card-1 {
+.card-supplements {
     background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplements-1920px.jpg");
 }
 
-.card-2 {
+.card-supplements-turkey {
+    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplement-turkey-tail-mushroom-1920px.jpg");
+}
+
+.card-supplements-kelp {
+    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplement-atlantic-kelp-1920px.jpg");
+}
+
+.card-supplements-pumpkin {
+    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplement-pumpkin-1920px.jpg");
+}
+
+.card-supplements-mushroom {
+    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplement-7-mushroom-blend-1920px.jpg");
+}
+
+.card-one-world {
     background-image: url("./img/design/one-world-two-eyes/colbyramsay-logo-design-one-world-two-eyes-1920px.png");
 }
 
-.card-3 {
+.card-skincare-1 {
     background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-products-1920px.jpg");
 }
 
-.card-4 {
+.card-truvai {
     background-image: url("./img/design/truvai/colbyramsay-packaging-design-truvai-jewelry-box-open-1920px.jpg");
 }
 
-.card-5 {
+.card-treats {
     background-image: url("./img/design/treats/colbyramsay-packaging-design-3d-render-hemp-dog-treats-1920px.jpg");
 }
 
-.card-6 {
+.card-skincare-2 {
     background-image: url("./img/design/skincare-2/colbyramsay-label-design-3d-render-hemp-fix-lip-balm-and-body-butter-1920px.jpg");
 }
 
-.card-7 {
+.card-tinctures-1 {
     background-image: url("./img/design/tinctures-1/colbyramsay-label-design-3d-render-hemp-tinctures-original-1920px.jpg");
 }
 
-.card-8 {
+.card-bath-bombs {
     background-image: url("./img/design/bath-bombs/colbyramsay-3d-render-bath-bombs-2-1920px.jpg");
 }
 
-.card-9 {
+.card-gummies {
     background-image: url("./img/design/gummies/colbyramsay-packaging-design-3d-render-hemp-gummies-1920px.jpg");
 }
 
-.card-10 {
+.card-tinctures-2 {
     background-image: url("./img/design/tinctures-2/colbyramsay-label-design-3d-render-hemp-pet-tinctures-1920px.jpg");
 }
 
-.card-11 {
+.card-clocks-1 {
     background-image: url("./img/design/clocks-1/colbyramsay-product-design-minimalist-steel-bar-circle-clock-white-1920px.jpg");
 }
 
-.card-12 {
+.card-clocks-2 {
     background-image: url("./img/design/clocks-2/colbyramsay-product-design-wooden-dinosaur-clock-red-1920px.jpg");
 }
 
-.card-13 {
+.card-lillian-sinclair {
     background-image: url("./img/design/lillian-sinclair/colbyramsay-logo-design-branding-lillian-sinclair-stamp-1920px.jpg");
 }
 
-.card-14 {
+.card-ok-market {
     background-image: url("./img/design/the-ok-market/colbyramsay-web-design-the-ok-market-1920px.jpg");
 }
 
-.card-15 {
+.card-bar-stools {
     background-image: url("./img/design/bar-stools/colbyramsay-industrial-design-fabrication-brewery-bar-stools-4-1920px.jpg");
 }
