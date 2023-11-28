@@ -1,4 +1,4 @@
-/*{ border: 1px solid pink; }*/
+*{ border: 1px solid pink; }
 
 body {
     margin: 0;
@@ -115,7 +115,7 @@ span.underline {
 .mid-section {
     display: flex;
     flex-direction: column;
-    margin: 18px;
+    margin: 0px;
 }
 
 .mid-section-no-margin {
@@ -132,15 +132,15 @@ span.underline {
     justify-content: center;
 }
 
-.hero-image {
+.hero-container {
     background-color: white;
-    /* background-size: cover; */
     background-position: center;
     border-radius: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 600px;
+    margin: 18px;
 }
 
 .hero-image-contain {
@@ -197,22 +197,10 @@ ul.footer-list {
     font-style: oblique;
 }
 
-.cards-x {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    font-style: oblique;
-    flex: .5;
-}
-
 .card {
-    /* border: 1px solid #eee; */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    /* box-shadow: 2px 4px 4px 0px rgba(0,0,0,.2); */
     background-color: white;
     border-radius: 18px;
     width: 350px;
@@ -224,22 +212,6 @@ ul.footer-list {
     justify-content: center;
 }
 
-
-.card-x {
-    /* border: 1px solid #eee; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* box-shadow: 2px 4px 4px 0px rgba(0,0,0,.2); */
-    background-color: white;
-    border-radius: 18px;
-    min-width: 350px;
-    min-height: 197px;
-    padding: 0 0 117px 0;
-    margin: 9px;
-}
-
-
 a.card-links {
     background-color: white;
     box-shadow: 2px 4px 4px 0px rgba(0,0,0,.33);
@@ -248,8 +220,6 @@ a.card-links {
     font-family: none;
     font-size: normal;
     font-style: none;
-    /*border-radius: 3px;*/
-    /*padding: 2px 3px 4px 3px;*/
 }
 
 .card-1 {
@@ -310,16 +280,4 @@ a.card-links {
 
 .card-15 {
     background-image: url("./img/design/bar-stools/colbyramsay-industrial-design-fabrication-brewery-bar-stools-4-1920px.jpg");
-}
-
-.card-sup-1 {
-    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplements-1920px.jpg");
-}
-
-.card-sup-2 {
-    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplement-turkey-tail-mushroom-1920px.jpg");
-}
-
-.card-sup-3 {
-    background-image: url("./img/design/supplements/colbyramsay-label-design-3d-render-pet-supplement-atlantic-kelp-1920px.jpg");
 }
