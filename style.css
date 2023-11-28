@@ -86,7 +86,7 @@ span.underline {
     text-decoration: underline dotted;
 }
 
-.lower-header {
+.banner {
     font-weight: normal;
     font-size: x-large;
     display: flex;
