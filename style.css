@@ -118,6 +118,12 @@ span.underline {
     margin: 18px;
 }
 
+.mid-section-no-margin {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
 .hero-image {
     background-color: white;
     /* background-size: cover; */
@@ -164,7 +170,6 @@ ul.footer-list {
     flex-wrap: wrap;
     justify-content: center;
     padding: 18px;
-    gap: 0;
     font-style: oblique;
 }
 
@@ -174,7 +179,6 @@ ul.footer-list {
     justify-content: center;
     flex-direction: column;
     padding: 18px;
-    gap: 0;
     font-style: oblique;
 }
 
@@ -186,10 +190,10 @@ ul.footer-list {
     /* box-shadow: 2px 4px 4px 0px rgba(0,0,0,.2); */
     background-color: white;
     border-radius: 18px;
-    width: 272px;
-    height: 145px;
-    padding: 9px;
-    margin: 27px;
+    width: 350px;
+    height: 197px;
+    padding: 0;
+    margin: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
