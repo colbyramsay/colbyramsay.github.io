@@ -6,7 +6,7 @@ body {
     100% of vh: "viewport height" */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     font-family: none;
     background-color: white;
     color: black;
@@ -92,7 +92,7 @@ span.underline {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 54px;
+    height: 81px;
 }
 
 .pink-text {
@@ -135,6 +135,7 @@ span.underline {
 .hero-container {
     background-color: white;
     background-position: center;
+    background-size: cover;
     border-radius: 18px;
     display: flex;
     justify-content: center;
@@ -145,7 +146,6 @@ span.underline {
 
 .hero-image-contain {
     background-color: white;
-    
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,12 +189,11 @@ ul.footer-list {
     align-items: center;
 }
 
-.cards {
+.design-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 18px;
-    font-style: oblique;
+    margin: 36px;
 }
 
 .card {
@@ -219,7 +218,7 @@ a.card-links {
     filter: saturate(0);
     font-family: none;
     font-size: normal;
-    font-style: none;
+    font-style: oblique;
 }
 
 .card-1 {
