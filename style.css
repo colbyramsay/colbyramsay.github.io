@@ -280,8 +280,33 @@ a.card-links {
     background-image: url("./img/design/treats/colbyramsay-packaging-design-3d-render-hemp-dog-treats-1920px.jpg");
 }
 
+.card-treats-apple {
+    background-image: url("./img/design/treats/colbyramsay-packaging-design-3d-render-hemp-dog-treats-apple-1920px.jpg");
+}
+
+.card-treats-blueberry {
+    background-image: url("./img/design/treats/colbyramsay-packaging-design-3d-render-hemp-dog-treats-blueberry-1920px.jpg");
+}
+
+.card-treats-pb {
+    background-image: url("./img/design/treats/colbyramsay-packaging-design-3d-render-hemp-dog-treats-peanut-butter-1920px.jpg");
+}
+
+.card-treats-pumpkin {
+    background-image: url("./img/design/treats/colbyramsay-packaging-design-3d-render-hemp-dog-treats-pumpkin-1920px.jpg");
+}
+
+
 .card-skincare-2 {
     background-image: url("./img/design/skincare-2/colbyramsay-label-design-3d-render-hemp-fix-lip-balm-and-body-butter-1920px.jpg");
+}
+
+.card-skincare-2-lip-balm {
+    background-image: url("./img/design/skincare-2/colbyramsay-label-design-3d-render-hemp-fix-lip-balm-1920px.jpg");
+}
+
+.card-skincare-2-body-butter {
+    background-image: url("./img/design/skincare-2/colbyramsay-label-design-3d-render-hemp-fix-body-butter-1920px.jpg");
 }
 
 .card-tinctures-1 {
