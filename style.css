@@ -24,7 +24,7 @@ body {
 
 .header {
     height: 63px;
-    font-size: large;
+    font-size: larger;
     font-weight: normal;
     background: none;
     padding-left: 18px;
@@ -50,7 +50,7 @@ body {
 
 .nav-links {
     font-style: oblique;
-    font-size: large;
+    font-size: larger;
 }
 
 ul {
@@ -113,7 +113,8 @@ button {
 
 .banner {
     font-weight: normal;
-    font-size: x-large;
+    font-size: xx-large;
+    font-style: oblique;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,10 +136,10 @@ button {
     background-color: white;
     color: #ff3399;
     font-family: none;
-    font-size: large;
+    font-size: x-large;
     font-style: oblique;
     border-radius: 3px;
-    padding: 3px 9px 3px 9px;
+    padding: 5px 9px 5px 9px;
     opacity: 1;
     filter: blur(0px);
 }
@@ -173,7 +174,7 @@ button {
 
 .footer {
     height: 81px;
-    font-size: large;
+    font-size: larger;
     background: none;
     display: flex;
     align-items: center;
@@ -224,7 +225,7 @@ a.card-links {
     opacity: 1;
     filter: saturate(0);
     font-family: none;
-    font-size: normal;
+    font-size: large;
     font-style: oblique;
 }
 
@@ -307,18 +308,46 @@ a.card-links {
 
 .card-skincare-2-body-butter {
     background-image: url("./img/design/skincare-2/colbyramsay-label-design-3d-render-hemp-fix-body-butter-1920px.jpg");
-}
+}   
 
 .card-tinctures-1 {
     background-image: url("./img/design/tinctures-1/colbyramsay-label-design-3d-render-hemp-tinctures-original-1920px.jpg");
+}
+
+.card-tinctures-1-peppermint {
+    background-image: url("./img/design/tinctures-1/colbyramsay-label-design-3d-render-hemp-tinctures-peppermint-1920px.jpg");
+}
+
+.card-tinctures-1-natural {
+    background-image: url("./img/design/tinctures-1/colbyramsay-label-design-3d-render-hemp-tinctures-natural-1920px.jpg");
 }
 
 .card-bath-bombs {
     background-image: url("./img/design/bath-bombs/colbyramsay-3d-render-bath-bombs-2-1920px.jpg");
 }
 
+.card-bath-bombs-a {
+    background-image: url("./img/design/bath-bombs/colbyramsay-3d-render-bath-bombs-1-1920px.jpg");
+}
+
+.card-bath-bombs-b {
+    background-image: url("./img/design/bath-bombs/colbyramsay-3d-render-bath-bombs-3-1920px.jpg");
+}
+
 .card-gummies {
     background-image: url("./img/design/gummies/colbyramsay-packaging-design-3d-render-hemp-gummies-1920px.jpg");
+}
+
+.card-tinctures-2-shamp {
+    background-image: url("./img/design/tinctures-2/colbyramsay-label-design-3d-render-hemp-pet-shampoo-conditioner-1920px.jpg");
+}
+
+.card-tinctures-2 {
+    background-image: url("./img/design/tinctures-2/colbyramsay-label-design-3d-render-hemp-pet-tinctures-1920px.jpg");
+}
+
+.card-tinctures-2-pet-products {
+    background-image: url("./img/design/tinctures-2/colbyramsay-label-design-3d-render-hemp-pet-products-1920px.jpg");
 }
 
 .card-tinctures-2 {
@@ -329,20 +358,68 @@ a.card-links {
     background-image: url("./img/design/clocks-1/colbyramsay-product-design-minimalist-steel-bar-circle-clock-white-1920px.jpg");
 }
 
+.card-clocks-1-line {
+    background-image: url("./img/design/clocks-1/colbyramsay-product-design-minimalist-steel-bar-line-clock-black-1920px.jpg");
+}
+
+.card-clocks-1-triangle {
+    background-image: url("./img/design/clocks-1/colbyramsay-product-design-minimalist-steel-triangle-clock-black-1920px.jpg");
+}
+
+.card-clocks-1-circle {
+    background-image: url("./img/design/clocks-1/colbyramsay-product-design-minimalist-steel-circle-clock-teal-1920px.jpg");
+}
+
 .card-clocks-2 {
     background-image: url("./img/design/clocks-2/colbyramsay-product-design-wooden-dinosaur-clock-red-1920px.jpg");
+}
+
+.card-clocks-2-bunny {
+    background-image: url("./img/design/clocks-2/colbyramsay-product-design-wooden-bunny-clock-block-1920px.jpg");
+}
+
+.card-clocks-2-elephant {
+    background-image: url("./img/design/clocks-2/colbyramsay-product-design-wooden-elephant-clock-pink-1920px.jpg");
+}
+
+.card-clocks-2-sloth {
+    background-image: url("./img/design/clocks-2/colbyramsay-product-design-wooden-sloth-clock-blue-1920px.jpg");
+}
+
+.card-clocks-2-wooden-square {
+    background-image: url("./img/design/clocks-2/colbyramsay-product-design-wooden-square-number-clock-light-blue-1920px.jpg");
 }
 
 .card-lillian-sinclair {
     background-image: url("./img/design/lillian-sinclair/colbyramsay-logo-design-branding-lillian-sinclair-stamp-1920px.jpg");
 }
 
+.card-lillian-sinclair-mag {
+    background-image: url("./img/design/lillian-sinclair/colbyramsay-logo-design-branding-lillian-sinclair-1920px.jpg");
+}
+
 .card-ok-market {
     background-image: url("./img/design/the-ok-market/colbyramsay-web-design-the-ok-market-1920px.jpg");
 }
 
+.card-ok-market-logo {
+    background-image: url("./img/design/the-ok-market/colbyramsay-branding-logo-design-the-ok-market-1920px.jpg");
+}
+
 .card-bar-stools {
     background-image: url("./img/design/bar-stools/colbyramsay-industrial-design-fabrication-brewery-bar-stools-4-1920px.jpg");
+}
+
+.card-bar-stools-3 {
+    background-image: url("./img/design/bar-stools/colbyramsay-industrial-design-fabrication-brewery-bar-stools-3-1920px.jpg");
+}
+
+.card-bar-stools-2 {
+    background-image: url("./img/design/bar-stools/colbyramsay-industrial-design-fabrication-brewery-bar-stools-2-1920px.jpg");
+}
+
+.card-bar-stools-1 {
+    background-image: url("./img/design/bar-stools/colbyramsay-industrial-design-fabrication-brewery-bar-stools-1-1920px.jpg");
 }
 
 .arrow {
