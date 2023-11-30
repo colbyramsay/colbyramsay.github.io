@@ -1,18 +1,13 @@
-/*
-
-*{ border: 1px solid pink; }
-
-*/
+/* *{ border: 1px solid pink; } */
 
 body {
     margin: 0;
-    min-height: 100vh; /* initial body height = 
-    100% of vh: "viewport height" */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: none;
-    font-style: none;
+    font-family: Times, serif;
+    font-style: oblique;
     background-color: white;
     color: black;
 }
@@ -27,8 +22,7 @@ body {
     font-size: larger;
     font-weight: normal;
     background: none;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding: 0 6px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +32,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-style: oblique;
 }
 
 .nav-container {
@@ -49,7 +42,6 @@ body {
 }
 
 .nav-links {
-    font-style: oblique;
     font-size: larger;
 }
 
@@ -62,9 +54,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #ff3399;
-    filter: saturate(0);
-    opacity: 0.77;
+    color: #5a5a5a;
     transition-duration: 0.4s;
     padding: 6px 12px 6px 12px;
     margin: 0;
@@ -77,29 +67,25 @@ p {
 
 button {
     background-color: transparent;
-    opacity: .77;
-    font-size: large;
+    opacity: .81;
+    font-size: x-large;
     border: none;
     border-radius: 50%;
-    padding: 2px 9px 2px 9px;
+    padding: 2px 12px 2px 12px;
     transition-duration: 0.4s;
 }
  
 @media (hover: hover) { 
     button:hover { 
-        /* Add hover effect to button 
-        on hover enabled devices */ 
         opacity: 1;
     } 
 
     a:hover {
-        opacity: 1;
-        filter: saturate(1);
+        color: #ff3399;
     }
 
     a.card-links:hover {
-        opacity: 1;
-        filter: saturate(1);
+        color: #ff3399;
     }
 } 
 
@@ -107,14 +93,13 @@ button {
     text-decoration: underline dotted;
 }
 
-.oblique {
-    font-style: oblique;
+.normal-text {
+    font-style: normal;
 }
 
 .banner {
     font-weight: normal;
     font-size: xx-large;
-    font-style: oblique;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,19 +114,14 @@ button {
 
 .pink-text {
     color: #ff3399;
-    font-style: oblique;
 }
 
 .highlight-text {
     background-color: white;
     color: #ff3399;
-    font-family: none;
     font-size: x-large;
-    font-style: oblique;
     border-radius: 3px;
     padding: 5px 9px 5px 9px;
-    opacity: 1;
-    filter: blur(0px);
 }
 
 .hero-container {
@@ -222,11 +202,7 @@ ul.footer-list {
 a.card-links {
     background-color: white;
     box-shadow: 2px 4px 4px 0px rgba(0,0,0,.33);
-    opacity: 1;
-    filter: saturate(0);
-    font-family: none;
     font-size: large;
-    font-style: oblique;
 }
 
 .card-supplements {
@@ -423,9 +399,9 @@ a.card-links {
 }
 
 .arrow {
-    border: solid #ff3399;
+    border: solid #5a5a5a;;
     border-width: 0 1px 1px 0;
-    display:inline-block;
+    display: inline-block;
     padding: 5px;
     margin: 0;
   }
