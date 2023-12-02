@@ -132,12 +132,13 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 600px;
+    min-height: 800px;
     margin: 18px;
 }
 
 .hello-image {
     background-image: url("./img/about/colbyramsay-about-me-1024px.gif");
+    background-position: 33%;
 }
 
 .design-image {
