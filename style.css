@@ -45,6 +45,10 @@ body {
     font-size: larger;
 }
 
+.no-padding {
+    padding: 0;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -250,8 +254,12 @@ a.card-links {
     background-image: url("./img/design/skincare-1/colbyramsay-label-design-3d-render-hemp-skincare-1920px.jpg");
 }
 
-.card-truvai {
-    background-image: url("./img/design/truvai/colbyramsay-packaging-design-truvai-jewelry-box-open-1920px.jpg");
+.card-truvai-1 {
+    background-image: url("./img/design/truvai/colbyramsay-packaging-design-truvai-jewellery-A2-1820px.jpg");
+}
+
+.card-truvai-2 {
+    background-image: url("./img/design/truvai/colbyramsay-packaging-design-truvai-jewellery-B2-1820px.jpg");
 }
 
 .card-treats {
