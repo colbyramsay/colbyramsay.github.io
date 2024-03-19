@@ -1,16 +1,101 @@
-/* *{ border: 1px solid pink; } */
+:root {
+  --black-color: hsl(0, 0%, 14%);
+  --black-color-light: hsla(0, 0%, 14%, 0.81);
+  --black-color-ghost: hsl(0, 0%, 54%);
+  --dark-color: hsl(0, 0%, 28%);
+  --dark-color-light: hsl(0, 0%, 28%, 0.81);
+  --super-white-color: hsl(0, 0%, 100%);
+  --off-white-color: hsl(0, 0%, 96%);
+  --gray-color: hsl(0, 0%, 75%);
+  --primary-color: hsl(204, 100%, 73%);
+  --secondary-color: hsl(75, 100%, 94%);
+  --highlight-color: hsl(330, 100%, 71%);
+  --highlight-color-ghost: hsla(330, 100%, 71%, 0.81);
+  --primary-gradient: linear-gradient(0deg, var(--primary-color), var(--secondary-color));
+  --primary-gradient-180: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+  --highlight-gradient: linear-gradient(0deg, var(--highlight-color), var(--secondary-color));
+  --highlight-gradient-180: linear-gradient(180deg, var(--highlight-color), var(--secondary-color));
+
+  --root-font-size: 16px;
+  font-size: var(--root-font-size);
+
+  --font-primary: 'Helvetica Neue', Helvetica, sans-serif;
+  --font-secondary: 'Times', serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  border: 0px solid var(--highlight-color);
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  padding: 18px;
+}
 
 body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: Times, serif;
-    font-style: oblique;
-    background-color: white;
-    color: black;
+  perspective: 800px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--primary-gradient);
+  font-family: var(--font-primary);
 }
+
+h1 {
+  color: var(--black-color-light);
+  margin: 18px 18px 0 18px;
+  letter-spacing: 1.8px;
+}
+
+h2 {
+  margin: 0;
+  font-style: oblique;
+  font-weight: lighter;
+  color: var(--dark-color-light);
+  letter-spacing: .63px;
+  font-family: var(--font-secondary);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--highlight-gradient-180);
+  border-radius: 100%;
+  height: 81px;
+  width: 81px;
+  margin: 81px;
+  transition: 3s;
+}
+
+.logo:hover {
+  cursor: pointer;
+  transform: rotate(1080deg);
+}
+
+@keyframes logo-glow {
+  0%    {filter: drop-shadow(0 0 -1em var(--highlight-color));}
+  40%   {filter: drop-shadow(0 0 2em var(--highlight-color));}
+  60%   {filter: drop-shadow(0 0 2em var(--highlight-color));}
+  100%  {filter: drop-shadow(0 0 -1em var(--highlight-color));}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-glow infinite 5s ease;
+  }
+}
+
 
 .dark-mode {
     background-color: black;
@@ -103,12 +188,12 @@ button {
 
 .banner {
     font-weight: normal;
-    font-size: xx-large;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 0 36px 0 36px;
-    height: 81px;
+    min-height: 360px;
 }
 
 .banner-large {
@@ -121,7 +206,7 @@ button {
 }
 
 .highlight-text {
-    background-color: white;
+    background-color: none;
     color: #ff3399;
     font-size: x-large;
     border-radius: 3px;
@@ -131,18 +216,20 @@ button {
 .hero-container {
     background-color: white;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     border-radius: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* if there is more content than the min-height, container will grow */
     min-height: 800px;
     margin: 18px;
 }
 
 .hello-image {
     background-image: url("./img/about/colbyramsay-about-me-1024px.gif");
-    background-position: 33%;
+    /* if bg-pos is 0, image will stick to left side */
+    background-position: 0;
 }
 
 .design-image {
