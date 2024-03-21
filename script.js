@@ -231,8 +231,27 @@ async function fetchNewImage() {
 fetchNewImage();
 
 searchBtn.addEventListener("click", fetchNewImage);
+
 searchInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         fetchNewImage();
+        e.target.value = '';
     }
 });
+
+
+/*
+
+this is new code to clear the input form
+
+--cr 12:42AM 3.21.24
+
+*/
+
+searchInput.addEventListener('focus', (e) => {
+    // Clear the input value when the user clicks on it
+    e.target.value = '';
+});
+
+/* still need to clear the form after you hit enter
+CLEAR THE ERROR WHEN YOU SUBMIT NOTHING */

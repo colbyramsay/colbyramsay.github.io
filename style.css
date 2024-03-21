@@ -55,19 +55,22 @@ body {
     font-family: var(--font-primary);
 }
 
+.tagline {
+    margin: 0;
+}
+
 h1 {
     color: var(--black-color-light);
-    margin: 0;
     letter-spacing: 1.8px;
 }
 
 h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 27px;
     font-style: oblique;
     font-weight: lighter;
     color: var(--dark-color-light);
-    letter-spacing: .63px;
+    letter-spacing: .81px;
     font-family: var(--font-secondary);
 }
 
@@ -82,10 +85,10 @@ h2 {
 }
 
 .art-block {
-    width: 500px;
+    width: 360px;
     background: var(--super-white-color);
     border-radius: 9px;
-    margin: 0 auto;
+    margin: 18px auto;
 }
 
 
@@ -155,7 +158,7 @@ p.article {
     max-width: 270px;
     background-size: 333%;
     background-position: center;
-    margin: 0 auto;
+    margin: 18px auto 63px auto;
 }
 
 .rotate90 {
@@ -176,7 +179,7 @@ p.article {
     border: 1px solid var(--off-white-color);
     height: 269px;
     width: 269px;
-    margin: 0;
+    margin: 0 0 18px 0;
     transition: 1s;
 }
 
@@ -228,13 +231,55 @@ p.article {
     }
 }
 
+input {
+    border: 0px solid var(--gray-color);
+    color: var(--gray-color);
+    background: var(--super-white-color);
+    border-radius: 6px 0 0 6px;
+    text-align: center;
+    margin: 0;
+    width: 108px;
+    height: 27px;
+    padding: 0px;
+    letter-spacing: .18px;
+}
+
+input:focus {
+    border: 0px solid var(--primary-color);
+    box-shadow: 0 0 3px var(--primary-color);
+    outline-offset: 0px;
+    outline: 1px solid blue;
+    color: var(--dark-color-light);
+}
+
+.search-btn {
+    font-family: var(--font-secondary);
+    font-style: oblique;
+    letter-spacing: 0px;
+    font-size: 15px;
+    height: 27px;
+    width: 45px;
+    margin: 0;
+    padding: 0;
+    background: var(--super-white-color);
+    border-radius: 0 6px 6px 0;
+    border: 0px solid var(--highlight-color-ghost);
+    color: var(--black-color-ghost);
+    transition: .4s;
+}
+
+.search-btn:hover {
+    color: var(--highlight-color-ghost);
+    cursor: pointer;
+}
+
 .dark-mode {
     background-color: black;
     color: white;
 }
 
 .header {
-    height: 63px;
+    height: 36px;
     font-size: larger;
     font-weight: normal;
     background: none;
@@ -244,8 +289,22 @@ p.article {
     justify-content: space-between;
 }
 
-.main-container {
-    height: 100vh;
+
+.footer {
+    height: 36px;
+    font-family: var(--font-primary);
+    font-size: 13px;
+    letter-spacing: 1.8px;
+    opacity: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.footer-list {
+    flex-direction: column;
+    align-items: center;
 }
 
 .inner-container {
@@ -299,7 +358,8 @@ button {
     font-family: var(--font-secondary);
     font-style: oblique;
     border-radius: 18px;
-    padding: 3px;
+    padding: 0;
+    margin: 0;
     transition-duration: 0.18s;
 }
  
@@ -382,23 +442,6 @@ button {
 
 .treat-image {
     background-image: url(".img/design/colbyramsay-packaging-design-3d-render-hemp-dog-treats-1920px");
-}
-
-.footer {
-    height: 63px;
-    font-family: var(--font-primary);
-    font-size: 13px;
-    letter-spacing: 1.8px;
-    opacity: 0;
-    background: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-ul.footer-list {
-    flex-direction: column;
-    align-items: center;
 }
 
 .design-cards {
