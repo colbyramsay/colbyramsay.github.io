@@ -18,19 +18,25 @@ function myFunction() {
 */
 
 const sun = document.getElementById("sun");
+const son = document.getElementById("son");
 const halo = document.getElementById("halo");
 
 const grow = () => {
-  if (sun.classList.contains("grow")) {
-    sun.classList.remove("grow");
-    halo.classList.remove("grow-margin");
-  } else {
-    sun.classList.add("grow");
-    halo.classList.add("grow-margin");
-  }
+    if (sun.classList.contains("grow")) {
+        sun.classList.remove("grow");
+        halo.classList.remove("grow-margin");
+    } else {
+        sun.classList.add("grow");
+        halo.classList.add("grow-margin");
+    }
 }
 
+/*
+should use TOGGLE for above
+*/
+
 sun.addEventListener("click", grow);
+son.addEventListener("click", grow);
 
 /*
 const webDevBtn = document.getElementById("web-dev-btn");
@@ -230,12 +236,27 @@ async function fetchNewImage() {
 
 fetchNewImage();
 
-searchBtn.addEventListener("click", fetchNewImage);
+searchBtn.addEventListener("click", () => {
+    setDefault();
+    fetchNewImage();
+});
+
+function setDefault() {
+    // Get the input element
+    
+
+    // Check if the input value is empty
+    if (searchInput.value === '') {
+        // Assign a default value if the input is empty
+        searchInput.value = 'waves';
+    }
+}
 
 searchInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
+        setDefault();
         fetchNewImage();
-        e.target.value = '';
+        e.target.blur();
     }
 });
 
