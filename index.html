@@ -7,33 +7,86 @@
     <meta name="author" content="colby ramsay dot com">
     <title>colby ramsay dot com</title>
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <div>
-        <div class="header">
-            <a href="./contact.html"><span class="normal-text"></span></a>
-            <div class="right-links">
-                <ul>
-                    <li><a href="./index.html"><span class="underline"></span></a></li>
-                    <li><a href="./design.html"></a></li>
-                </ul>
-            </div> 
+    <div class="header">
+        <a href="./contact.html"><span class="normal-text"></span></a>
+        <div class="right-links">
+            <ul>
+                <li><a href="./index.html"><span class="underline"></span></a></li>
+            </ul>
+        </div> 
+    </div>
+
+    <div class="banner">
+        <div class="halo" id="halo">
+            <div class="sun" id="sun"></div>
         </div>
-        <div class="banner">
-            <div class="halo" id="halo">
-                <div class="sun" id="sun"></div>
+    </div>
+    
+   
+
+       <div class="web-dev-container hidden" id="web-dev-container">
+        <div class="music-player">
+           
+            <div class="search-form">
+                <label for="search-input"></label>
+                <input
+                value="clouds"
+                type="text"
+                name="search input"
+                id="search-input"
+                class="search-input"
+                />
+                <button class="search-btn" id="search-btn">engage</button>
             </div>
-            <h1>colby ramsay dot com</h1>
-            <h2>for visualizing the audio</h2>
-            <div class="art-block">
-            <p class="article">
-                this is a playground. a 
-                place for trying out ideas. seeing what works,
-                & what doesn't. it's a will smith, of sorts.
-            </p>
+                <div class="controls">
+                <button class="control" type="button" id="previous" aria-label="Previous"><<</button>
+                <button class="control rotate90" type="button" id="play" aria-label="Play">∆</button>
+                <button class="control rotate90" type="button" id="pause" aria-label="Pause">=</button>
+                <button class="control" type="button" id="next" aria-label="Next">>></button>
+                <button class="control light" type="button" id="shuffle" aria-label="Shuffle">&</button>
+                </div>
+            <div class="track-list">
+                <ul id="playlist"></ul>
             </div>
         </div>
     </div>
+    <div >     
+        <h1>colby ramsay</a> dot com</h1>
+        <h2>web development + graphic design</h2>
+    </div>  
+
+    <div class="art-block">
+        <p class="article">
+            this is a playground. a 
+            place for trying out ideas. seeing what works,
+            & what doesn't. it's a "will smith" of sorts, &
+            as such it will be a perpetual <span class="oblique">work in progress.</span>
+        </p>
+        </div>
+    
+    <div class="gif-shell">
+        <div class="gif-container" id="gif-container"></div>
+    </div>
+        
+    <div class="footer">
+        <a href="./files/colbyramsay-resume.pdf" target="_blank">[ PDF RESUMÉ ]</a>
+    </div>
 </body>
+
 </html>
+
+<!--
+    <h2><button type="button" id="web-dev-btn" aria-label="Web Development">web development</button>
+        + <a class="text-links" href="./design.html" target="_blank">graphic design</a></h2>
+
+         <div class="art-block">
+            p.s. if you would prefer to see something other than "clouds"
+            feel free to search below for something else that is more
+            suited to your personal preference. perhaps "starling murmuration?"
+            <span class="oblique">the choice is yours...</span>
+            </div>
+-->
