@@ -24,9 +24,11 @@ const halo = document.getElementById("halo");
 const grow = () => {
     if (sun.classList.contains("grow")) {
         sun.classList.remove("grow");
+        son.classList.remove("grow");
         halo.classList.remove("grow-margin");
     } else {
         sun.classList.add("grow");
+        son.classList.add("grow");
         halo.classList.add("grow-margin");
     }
 }
