@@ -22,13 +22,13 @@ const son = document.getElementById("son");
 const halo = document.getElementById("halo");
 
 const grow = () => {
-    if (sun.classList.contains("grow")) {
-        sun.classList.remove("grow");
-        son.classList.remove("grow");
+    if (sun.classList.contains("grow-big")) {
+        sun.classList.remove("grow-big");
+        son.classList.remove("grow-med");
         halo.classList.remove("grow-margin");
     } else {
-        sun.classList.add("grow");
-        son.classList.add("grow");
+        sun.classList.add("grow-big");
+        son.classList.add("grow-med");
         halo.classList.add("grow-margin");
     }
 }

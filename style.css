@@ -110,14 +110,13 @@ h2 {
 p.article {
     margin: 0 0 0 0;
     font-size: 18px;
-    font-style: normal;
     font-family: monospace;
     color: var(--black-color-light);
     letter-spacing: .81px;
-    line-height: 1.3;
+    line-height: 1.35;
     border-radius: 3px;
     border: 0px solid pink;
-    padding: 0 0 3px 0;
+    padding: 0 0 9px 0;
 }
 
 .web-dev-container {
@@ -166,13 +165,20 @@ p.article {
 }
 
 .gif-container {
-    border-radius: 50%;
+    border-width: 18px 18px 0px 18px;
+    border-color: var(--super-white-color);
+    border-style: groove;
+    border-radius: 50% 50% 0 0;
     height: 270px;
     width: 270px;
     background-size: 333%;
-    background-position: center;
-    margin: 18px auto;
-    filter: brightness(135%);
+    background-position: 50%;
+    margin: 18px auto 0 auto;
+    filter: brightness(155%);
+    box-shadow: 0 0 36px var(--super-white-color);
+    outline-width: 1px 0 0 0;
+    outline-color: white;
+    outline-style: double;
 }
 
 .rotate90 {
@@ -199,15 +205,22 @@ p.article {
     background: var(--primary-gradient-180);
 }
 
-.grow {
+.grow-big {
     transform: scale(333%);
-    /*
-    pointer-events: none;
-    */
+    /* pointer-events: none; */
 }
+
+.grow-med {
+    transform: scale(180%);
+}
+
 
 .grow-margin {
     margin: 81px 0 81px 0;
+}
+
+.line-height {
+    line-height: 1.8;
 }
 
 .sun {
@@ -227,16 +240,17 @@ p.article {
 .son {
     position: absolute;
     background: var(--highlight-gradient);
-    background-image: url("./img/about/colbyramsay-about-me-1024px.gif");
-    background-size: 711%;
-    background-position: 18%;
+    background-image: url("./img/about/colbyramsay-avatar.jpg");
+    background-size: 144%;
+    background-position: 50%;
     border-radius: 100%;
-    opacity: .81;
+    opacity: .54;
     height: 81px;
     width: 81px;
     margin: 81px;
     transition: .81s;
-    z-index: 1;
+    z-index: 0;
+    filter: brightness(135%);
 }
 
 .sun:hover {
@@ -245,7 +259,8 @@ p.article {
 
 .son:hover {
     cursor: pointer;
-    filter: brightness(180%);
+    filter: brightness(171%);
+    opacity: .36;
     transform: scale(108%);
 }
 
@@ -341,7 +356,7 @@ input:focus {
 
 
 .footer {
-    height: 36px;
+    height: 0;
     font-family: var(--font-primary);
     font-size: 13px;
     letter-spacing: 1.8px;
