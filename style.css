@@ -119,13 +119,30 @@ h2 {
     transform: translateX(50%);
 }
 
-.nav-tab {
+.nav-tab-left {
     width: 36px;
+    height: 36px;
     background: var(--super-white-color);
-    border-radius: 0;
-    padding: 15px 9px 9px 15px;
+    border-radius: 0 50% 50% 0;
+    border: none;
+    padding: 0;
     transition: .18s;
     filter: drop-shadow(0px 3px 3px var(--black-color-ghost));
+    opacity: 1;
+    margin: 0;
+}
+
+.nav-tab-right {
+    width: 36px;
+    height: 36px;
+    background: var(--super-white-color);
+    border-radius: 50% 0 0 50%;
+    border: none;
+    padding: 0;
+    transition: .18s;
+    filter: drop-shadow(0px 3px 3px var(--black-color-ghost));
+    opacity: 1;
+    margin: 0;
 }
 
 .design-tab {
@@ -443,7 +460,7 @@ ul.footer-list {
 }
 
 .nav-links {
-    padding: 18px;
+    padding: 9px;
 }
 
 .no-padding {
@@ -797,11 +814,10 @@ a.card-links {
 }
 
 .arrow {
-    border: solid #5a5a5a;
+    border: solid var(--black-color-light);
     border-width: 0 1px 1px 0;
     display: inline-block;
-    padding: 5px;
-    margin: 0;
+    padding: 6px;
 }
   
 .right {
