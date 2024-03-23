@@ -46,10 +46,7 @@ html {
 body {
     min-height: 100vh;
     min-width: 100vw;
-    display: flex;
-    justify-content: space-between;
     text-align: center;
-    flex-direction: column;
     overflow: hidden;
     background: var(--primary-gradient-180);
     font-family: var(--font-primary);
@@ -62,6 +59,9 @@ body {
 }
 
 .inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow-y: auto; /* Allow vertical scrolling */
@@ -97,6 +97,64 @@ h2 {
     flex-direction: column;
 }
 
+
+.sticky-right {
+    position: fixed;
+    right: 0;
+    top: 54%; /* Adjust this value to position it vertically as desired */
+    /* transform: translateY(-63%); Center the element vertically */
+}
+
+.sticky-left {
+    position: fixed;
+    left: 0;
+    top: 54%; /* Adjust this value to position it vertically as desired */
+    /* transform: translateY(-63%); Center the element vertically */
+}
+
+.sticky-element-btm {
+    position: relative;
+    bottom: 0;
+    right: 50%; /* Adjust this value to position it vertically as desired */
+    transform: translateX(50%);
+}
+
+.nav-tab {
+    width: 36px;
+    background: var(--super-white-color);
+    border-radius: 0;
+    padding: 15px 9px 9px 15px;
+    transition: .18s;
+    filter: drop-shadow(0px 3px 3px var(--black-color-ghost));
+}
+
+.design-tab {
+    width: 108px;
+    background: var(--super-white-color);
+    border-radius: 50% 0 0 12px;
+    padding: 15px 9px 9px 15px;
+    transition: .18s;
+    filter: drop-shadow(0px 3px 3px var(--black-color-ghost));
+}
+
+.design-tab:hover {
+    cursor: pointer;
+    opacity: .81;
+    transform: scale(108%);
+}
+
+p.tab-text {
+    margin: 0 0 0 0;
+    font-size: 18px;
+    font-family: monospace;
+    color: var(--black-color-light);
+    letter-spacing: .81px;
+    line-height: .81;
+    border-radius: 3px;
+    border: 0px solid pink;
+    padding: 0 0 9px 0;
+}
+
 .art-block {
     width: 333px;
     background: var(--super-white-color);
@@ -105,7 +163,6 @@ h2 {
     padding: 18px 18px 18px 18px;
     filter: drop-shadow(0px 3px 3px var(--black-color-ghost));
 }
-
 
 p.article {
     margin: 0 0 0 0;
@@ -312,9 +369,9 @@ input {
 
 input:focus {
     border: 0px solid var(--primary-color);
-    box-shadow: 0 0 3px var(--primary-color);
+    box-shadow: 0 0 3px var(--black-color-ghost);
     outline-offset: 0px;
-    outline: 1px solid blue;
+    outline: 1px solid var(--black-color-light);
     color: var(--dark-color-light);
 }
 
@@ -386,7 +443,7 @@ ul.footer-list {
 }
 
 .nav-links {
-    font-size: larger;
+    padding: 18px;
 }
 
 .no-padding {
