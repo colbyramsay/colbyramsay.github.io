@@ -48,24 +48,35 @@ body {
     min-width: 100vw;
     text-align: center;
     overflow: hidden;
-    background: var(--primary-gradient-180);
     font-family: var(--font-primary);
 }
 
 .main-container {
-  width: 100%; /* Full width */
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Hide overflow of the main container */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow of the main container */
+    background: var(--super-white-color);
+}
+
+.main-container-sky {
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow of the main container */
+    background: var(--primary-gradient-180);
 }
 
 .inner-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow-y: auto; /* Allow vertical scrolling */
-  /* Add padding or margins if needed */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Allow vertical scrolling */
+    /* Add padding or margins if needed */
+}
+
+.container {
+    background: none;
 }
 
 .tagline {
@@ -101,14 +112,14 @@ h2 {
 .sticky-right {
     position: fixed;
     right: 0;
-    top: 54%; /* Adjust this value to position it vertically as desired */
+    top: 50%; /* Adjust this value to position it vertically as desired */
     /* transform: translateY(-63%); Center the element vertically */
 }
 
 .sticky-left {
     position: fixed;
     left: 0;
-    top: 54%; /* Adjust this value to position it vertically as desired */
+    top: 50%; /* Adjust this value to position it vertically as desired */
     /* transform: translateY(-63%); Center the element vertically */
 }
 
@@ -530,7 +541,6 @@ button {
     height: 135px;
 }
 
-
 .pink-text {
     color: #ff3399;
 }
@@ -818,6 +828,7 @@ a.card-links {
     border-width: 0 1px 1px 0;
     display: inline-block;
     padding: 6px;
+    margin: 3px 0 0 0;
 }
   
 .right {
