@@ -116,11 +116,25 @@ h2 {
     transform: translateY(-50%); /*Center the element vertically */
 }
 
+.sticky-top-right {
+    position: fixed;
+    right: 0;
+    top: 27%; /* Adjust this value to position it vertically as desired */
+    transform: translateY(-27%); /*Center the element vertically */
+}
+
+.sticky-top {
+    position: fixed;
+    top: 0;
+    right: 50%; /* Adjust this value to position it vertically as desired */
+    transform: translateX(50%); /*Center the element vertically */
+}
+
 .sticky-left {
     position: fixed;
     left: 0;
     top: 50%; /* Adjust this value to position it vertically as desired */
-    /* transform: translateY(-63%); Center the element vertically */
+    transform: translateY(-50%); /*Center the element vertically */
 }
 
 .sticky-element-btm {
@@ -165,6 +179,15 @@ h2 {
     filter: drop-shadow(0px 3px 3px var(--black-color-ghost));
 }
 
+.design-tab-top {
+    width: 135px;
+    background: var(--super-white-color);
+    border-radius: 0 0 0 0;
+    padding: 0;
+    transition: .18s;
+    filter: drop-shadow(0px 3px 3px var(--black-color-ghost));
+}
+
 .design-tab:hover {
     cursor: pointer;
     opacity: .81;
@@ -172,7 +195,7 @@ h2 {
 
 p.tab-text {
     margin: 0 0 0 0;
-    text-align: left;
+    text-align: none;
     font-size: 14px;
     font-family: monospace;
     color: var(--black-color-light);
@@ -180,7 +203,7 @@ p.tab-text {
     line-height: 1.35;
     border-radius: 3px;
     border: 0px solid pink;
-    padding: 0 0 0 18px;
+    padding: 0 0 0 0px;
 }
 
 .art-block {
