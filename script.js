@@ -56,11 +56,8 @@ webDevBtn.addEventListener("click", showWebDev);
 */
 
 /*
-
 below is code copied from our music player project
-
 --cr 3:55PM 3.20.24
-
 */
 
 const allSongs = [
@@ -232,7 +229,7 @@ async function fetchNewImage() {
         const fetchedImg = imgData.data.images.original.url;
         gifContainer.style.backgroundImage = `url("${fetchedImg}")`;
     } catch (err) {
-        alert(err);
+        alert("Rats in the machine! Something went wrong; please try again & enter only regular numbers or letters.");
     }
 }
 
@@ -244,13 +241,12 @@ searchBtn.addEventListener("click", () => {
 });
 
 function setDefault() {
-    // Get the input element
-    
-
     // Check if the input value is empty
     if (searchInput.value === '') {
+        let defaultValue = 'waves';
+        alert(`Rats in the machine! You forgot to type something; how about "${defaultValue}"?`)
         // Assign a default value if the input is empty
-        searchInput.value = 'waves';
+        searchInput.value = defaultValue;
     }
 }
 
@@ -262,13 +258,9 @@ searchInput.addEventListener("keydown", (e) => {
     }
 });
 
-
 /*
-
-this is new code to clear the input form
-
+below is new code to clear the input form
 --cr 12:42AM 3.21.24
-
 */
 
 searchInput.addEventListener('focus', (e) => {
@@ -276,5 +268,19 @@ searchInput.addEventListener('focus', (e) => {
     e.target.value = '';
 });
 
-/* still need to clear the form after you hit enter
-CLEAR THE ERROR WHEN YOU SUBMIT NOTHING */
+/*
+below is an attempt to make a regex test:
+
+const regex = /^[a-zA-Z0-9]+$/;
+
+function checkInput(input) {
+    return regex.test(input);
+}
+
+if (checkInput(searchInput)) {
+    alert("wonderful news!");
+} else {
+    alert("terrible news!");
+}
+
+*/

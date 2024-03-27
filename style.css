@@ -113,7 +113,7 @@ h2 {
     position: fixed;
     right: 0;
     top: 50%; /* Adjust this value to position it vertically as desired */
-    /* transform: translateY(-63%); Center the element vertically */
+    transform: translateY(-50%); /*Center the element vertically */
 }
 
 .sticky-left {
@@ -157,10 +157,10 @@ h2 {
 }
 
 .design-tab {
-    width: 108px;
+    width: 117px;
     background: var(--super-white-color);
-    border-radius: 50% 0 0 12px;
-    padding: 15px 9px 9px 15px;
+    border-radius: 27px 0 0 27px;
+    padding: 0;
     transition: .18s;
     filter: drop-shadow(0px 3px 3px var(--black-color-ghost));
 }
@@ -168,19 +168,19 @@ h2 {
 .design-tab:hover {
     cursor: pointer;
     opacity: .81;
-    transform: scale(108%);
 }
 
 p.tab-text {
     margin: 0 0 0 0;
-    font-size: 18px;
+    text-align: left;
+    font-size: 14px;
     font-family: monospace;
     color: var(--black-color-light);
     letter-spacing: .81px;
-    line-height: .81;
+    line-height: 1.35;
     border-radius: 3px;
     border: 0px solid pink;
-    padding: 0 0 9px 0;
+    padding: 0 0 0 18px;
 }
 
 .art-block {
@@ -378,7 +378,7 @@ p.article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 27px 0 0 0;
+    margin: 9px;
 }
 
 input {
