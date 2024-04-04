@@ -356,7 +356,7 @@ p.article {
 .gif-panel-1 {
     position: relative;
     width: 65vw;
-    height: 27px;
+    height: 2.2vh;
     background: var(--highlight-gradient-180);
     margin: auto;
 }
@@ -376,7 +376,7 @@ p.article {
 .gif-panel-2 {
     position: relative;
     width: 69vw;
-    height: 27px;
+    height: 2.2vh;
     background: var(--highlight-gradient-180);
     margin: auto;
 }
@@ -396,7 +396,7 @@ p.article {
 .gif-panel-3 {
     position: relative;
     width: 73vw;
-    height: 27px;
+    height: 2.2vh;
     background: var(--highlight-gradient-180);
     margin: auto;
 }
@@ -416,7 +416,7 @@ p.article {
 .gif-panel-4 {
     position: relative;
     width: 77vw;
-    height: 27px;
+    height: 2.2vh;
     background: var(--highlight-gradient-180);
     margin: auto;
 }
@@ -436,7 +436,7 @@ p.article {
 .gif-panel-5 {
     position: relative;
     width: 81vw;
-    height: 27px;
+    height: 2.2vh;
     background: var(--highlight-gradient-180);
     margin: auto;
 }
@@ -600,7 +600,7 @@ input:focus {
     height: 27px;
     width: 27px;
     margin: 27px auto 18px auto;
-    padding: 0 46px 0 0;
+    padding: 0 48px 0 0;
     background: none;
     border-radius: 0 0 50% 50%;
     border: 0px solid var(--highlight-color-ghost);
