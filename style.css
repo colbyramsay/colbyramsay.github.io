@@ -328,7 +328,7 @@ p.article {
     border-style: groove;
     border-radius: 50% 50% 0 0;
     height: 270px;
-    width: 270px;
+    width: 54vw;
     background-size: 234%;
     background-position: center;
     margin: 18px auto 0 auto;
@@ -343,7 +343,7 @@ p.article {
 
 .gif-step-1 {
     position: relative;
-    width: 332px;
+    width: 63vw;
     border-top: none;
     border-bottom: 1vw solid var(--secondary-color-ghost);
     border-left: 1.6vw solid transparent;
@@ -355,7 +355,7 @@ p.article {
 
 .gif-panel-1 {
     position: relative;
-    width: 332px;
+    width: 63vw;
     height: 36px;
     background: var(--highlight-gradient-180);
     margin: auto;
@@ -363,7 +363,7 @@ p.article {
 
 .gif-step-2 {
     position: relative;
-    width: 394px;
+    width: 72vw;
     border-top: none;
     border-bottom: 1vw solid var(--secondary-color-ghost);
     border-left: 1.6vw solid transparent;
@@ -375,7 +375,7 @@ p.article {
 
 .gif-panel-2 {
     position: relative;
-    width: 394px;
+    width: 72vw;
     height: 36px;
     background: var(--highlight-gradient-180);
     margin: auto;
@@ -383,7 +383,7 @@ p.article {
 
 .gif-step-3 {
     position: relative;
-    width: 456px;
+    width: 81vw;
     border-top: none;
     border-bottom: 1vw solid var(--secondary-color-ghost);
     border-left: 1.6vw solid transparent;
@@ -395,7 +395,7 @@ p.article {
 
 .gif-panel-3 {
     position: relative;
-    width: 456px;
+    width: 81vw;
     height: 36px;
     background: var(--highlight-gradient-180);
     margin: auto;
