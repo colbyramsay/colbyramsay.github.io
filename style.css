@@ -328,7 +328,7 @@ p.article {
     border-style: groove;
     border-radius: 50% 50% 0 0;
     height: 36vh;
-    width: 54vw;
+    width: 63vw;
     background-size: 54%;
     background-position: center;
     margin: 0 auto;
@@ -343,7 +343,7 @@ p.article {
 
 .gif-step-1 {
     position: relative;
-    width: 63vw;
+    width: 72vw;
     border-top: none;
     border-bottom: 1vw solid var(--secondary-color-ghost);
     border-left: 1.6vw solid transparent;
@@ -355,7 +355,7 @@ p.article {
 
 .gif-panel-1 {
     position: relative;
-    width: 63vw;
+    width: 72vw;
     height: 27px;
     background: var(--highlight-gradient-180);
     margin: auto;
@@ -363,7 +363,7 @@ p.article {
 
 .gif-step-2 {
     position: relative;
-    width: 72vw;
+    width: 76vw;
     border-top: none;
     border-bottom: 1vw solid var(--secondary-color-ghost);
     border-left: 1.6vw solid transparent;
@@ -375,7 +375,7 @@ p.article {
 
 .gif-panel-2 {
     position: relative;
-    width: 72vw;
+    width: 76vw;
     height: 27px;
     background: var(--highlight-gradient-180);
     margin: auto;
@@ -383,7 +383,7 @@ p.article {
 
 .gif-step-3 {
     position: relative;
-    width: 81vw;
+    width: 80vw;
     border-top: none;
     border-bottom: 1vw solid var(--secondary-color-ghost);
     border-left: 1.6vw solid transparent;
@@ -395,7 +395,7 @@ p.article {
 
 .gif-panel-3 {
     position: relative;
-    width: 81vw;
+    width: 80vw;
     height: 27px;
     background: var(--highlight-gradient-180);
     margin: auto;
@@ -403,7 +403,7 @@ p.article {
 
 .gif-step-4 {
     position: relative;
-    width: 90vw;
+    width: 84vw;
     border-top: none;
     border-bottom: 1vw solid var(--secondary-color-ghost);
     border-left: 1.6vw solid transparent;
@@ -415,7 +415,7 @@ p.article {
 
 .gif-panel-4 {
     position: relative;
-    width: 90vw;
+    width: 84vw;
     height: 27px;
     background: var(--highlight-gradient-180);
     margin: auto;
@@ -423,7 +423,7 @@ p.article {
 
 .gif-step-5 {
     position: relative;
-    width: 99vw;
+    width: 88vw;
     border-top: none;
     border-bottom: 1vw solid var(--secondary-color-ghost);
     border-left: 1.6vw solid transparent;
@@ -435,7 +435,7 @@ p.article {
 
 .gif-panel-5 {
     position: relative;
-    width: 99vw;
+    width: 88vw;
     height: 27px;
     background: var(--highlight-gradient-180);
     margin: auto;
