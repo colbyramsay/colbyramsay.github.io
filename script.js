@@ -20,16 +20,30 @@ function myFunction() {
 const sun = document.getElementById("sun");
 const son = document.getElementById("son");
 const halo = document.getElementById("halo");
+const artBlock = document.getElementById("art-block");
+const artInfo = document.getElementById("art-info");
 
 const grow = () => {
     if (sun.classList.contains("grow-big")) {
         sun.classList.remove("grow-big");
         son.classList.remove("grow-med");
         halo.classList.remove("grow-margin");
+        artBlock.classList.remove("grow-y");
+        artInfo.classList.remove("full-opacity");
+        artBlock.classList.remove("padding-18");
+        /*
+        artBlock.classList.remove("disable-hover");
+        */
     } else {
         sun.classList.add("grow-big");
         son.classList.add("grow-med");
         halo.classList.add("grow-margin");
+        artBlock.classList.add("grow-y");
+        artInfo.classList.add("full-opacity");
+        artBlock.classList.add("padding-18");
+        /*
+        artBlock.classList.add("disable-hover");
+        */
     }
 }
 
@@ -39,6 +53,7 @@ should use TOGGLE for above
 
 sun.addEventListener("click", grow);
 son.addEventListener("click", grow);
+artBlock.addEventListener("click", grow);
 
 /*
 const webDevBtn = document.getElementById("web-dev-btn");
