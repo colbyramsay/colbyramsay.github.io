@@ -163,7 +163,7 @@ h2 {
     filter: drop-shadow(0px 3px 3px var(--black-color-ghost));
     */
     box-shadow: 0px 4px 4px 0px var(--black-shadow);
-    opacity: 1;
+    opacity: .63;
     margin: 0;
 }
 
@@ -179,7 +179,7 @@ h2 {
     filter: drop-shadow(0px 3px 3px var(--black-color-ghost));
     */
     box-shadow: 0px 4px 4px 0px var(--black-shadow);
-    opacity: 1;
+    opacity: .63;
     margin: 0;
 }
 
@@ -799,13 +799,14 @@ button {
 }
 
 .card-large {
-    background-color: white;
+    background-color: var(--super-white-color);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 18px;
     height: 360px;
     width: 640px;
+    max-width: 81vw;
     margin: 27px;
     transition: .27s;
 }
