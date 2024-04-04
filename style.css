@@ -87,7 +87,7 @@ body {
 }
 
 h1 {
-    color: var(--black-color-light);
+    color: var(--black-color);
     letter-spacing: 2.7px;
 }
 
@@ -196,7 +196,7 @@ h2 {
     width: 180px;
     background: var(--super-white-color);
     border-radius: 0 0 50% 50%;
-    padding: 0;
+    padding: 0 0 0 1px;
     transition: .18s;
     /*
     filter: drop-shadow(2px 2px 2px var(--black-color-ghost));
@@ -574,7 +574,7 @@ input {
     border: 0px solid var(--gray-color);
     color: var(--gray-color);
     background: var(--super-white-color);
-    border-radius: 6px;
+    border-radius: 6px 6px 0 0;
     box-shadow: 0 0 2px var(--black-color-ghost);
     text-align: center;
     margin: 0;
@@ -588,31 +588,29 @@ input {
 input:focus {
     border: 0px solid var(--primary-color);
     box-shadow: 0 0 3px var(--black-color-ghost);
-    outline-offset: 0px;
+    outline-offset: -1px;
     outline: 1px solid var(--black-color-light);
     color: var(--dark-color-light);
 }
 
 .search-btn {
-    letter-spacing: 0px;
+    text-align: center;
+    letter-spacing: .18px;
+    font-size: 15px;
+    font-family: monospace;
     line-height: 1;
-    font-size: 45px;
-    height: 27px;
-    width: 27px;
-    margin: 27px auto 18px auto;
-    padding: 0 48px 0 0;
-    background: none;
+    width: 153px;
+    margin: 0 0 18px 0;
+    padding: 9px 0 12px 1px;
+    background: var(--black-color);
     border-radius: 0 0 50% 50%;
     border: 0px solid var(--highlight-color-ghost);
-    color: var(--black-color-ghost);
+    color: var(--off-white-color);tn
     transition: .27s;
 }
 
 .search-btn:hover {
-    color: var(--highlight-color-ghost);
     cursor: pointer;
-    transform: scale(108%);
-    filter: brightness(155%);
 }
 
 .dark-mode {
