@@ -258,7 +258,7 @@ searchBtn.addEventListener("click", () => {
 function setDefault() {
     // Check if the input value is empty
     if (searchInput.value === '') {
-        let defaultValue = 'waves';
+        let defaultValue = 'clouds';
         alert(`Rats in the machine! You forgot to type something; how about "${defaultValue}"?`)
         // Assign a default value if the input is empty
         searchInput.value = defaultValue;

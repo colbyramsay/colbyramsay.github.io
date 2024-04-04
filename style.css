@@ -327,9 +327,9 @@ p.article {
     border-color: var(--super-white-color);
     border-style: groove;
     border-radius: 50% 50% 0 0;
-    height: 270px;
+    height: 27vh;
     width: 54vw;
-    background-size: 234%;
+    background-size: 54%;
     background-position: center;
     margin: 18px auto 0 auto;
     filter: brightness(155%);
