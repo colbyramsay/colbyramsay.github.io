@@ -605,7 +605,7 @@ input:focus {
     background: var(--black-color);
     border-radius: 0 0 50% 50%;
     border: 0px solid var(--highlight-color-ghost);
-    color: var(--off-white-color);tn
+    color: var(--off-white-color);
     transition: .27s;
 }
 
