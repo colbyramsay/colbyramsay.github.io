@@ -71,7 +71,7 @@ body {
 .inner-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow-y: auto; /* Allow vertical scrolling */
@@ -79,6 +79,11 @@ body {
 }
 
 .container {
+    background: none;
+}
+
+.space-block {
+    height: 81px;
     background: none;
 }
 
@@ -457,12 +462,12 @@ p.article {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 1px solid var(--off-white-color);
+    border: 1px solid var(--gray-color);
     height: 270px;
     width: 270px;
     margin: 18px;
     transition: .81s;
-    background: var(--primary-gradient-180);
+    background: var(--super-white-color);
 }
 
 .grow-big {
@@ -497,7 +502,7 @@ p.article {
 
 .sun {
     position: absolute;
-    background: var(--highlight-gradient);
+    background: var(--off-white-color);
     opacity: 0.81;
     background-size: 555%;
     background-position: 13%;
@@ -536,13 +541,14 @@ p.article {
     transform: scale(108%);
 }
 
-
+/*
 @keyframes sun-glow {
     0%    {filter: drop-shadow(0 0 -1em var(--highlight-color));}
     40%   {filter: drop-shadow(0 0 2em var(--highlight-color));}
     60%   {filter: drop-shadow(0 0 2em var(--highlight-color));}
     100%  {filter: drop-shadow(0 0 -1em var(--highlight-color));}
 }
+*/
 
 @keyframes sun-rotate {
     0%  {transform: rotate(0deg);}
@@ -720,7 +726,7 @@ button {
     align-items: center;
     flex-direction: column;
     padding: 0 36px 0 36px;
-    margin: 18px 0 0 0;
+    margin: 18px;
     min-height: 72px;
 }
 
