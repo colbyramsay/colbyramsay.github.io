@@ -1,7 +1,7 @@
 :root {
     --black-shadow: hsl(0, 0%, 0%, 0.18);
     --black-color: hsl(0, 0%, 14%);
-    --black-color-light: hsla(0, 0%, 14%, 0.81);
+    --black-color-light: hsla(0, 0%, 14%, 0.72);
     --black-color-ghost: hsl(0, 0%, 54%);
     --dark-color: hsl(0, 0%, 28%);
     --dark-color-light: hsla(0, 0%, 28%, 0.81);
@@ -71,11 +71,12 @@ body {
 .inner-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow-y: auto; /* Allow vertical scrolling */
     /* Add padding or margins if needed */
+    
 }
 
 .container {
@@ -161,32 +162,22 @@ h2 {
 .nav-tab-left {
     width: 36px;
     height: 36px;
-    background: var(--super-white-color);
+    background: none;
     border-radius: 0 50% 50% 0;
     border: none;
     padding: 0;
     transition: .18s;
-    /*
-    filter: drop-shadow(0px 3px 3px var(--black-color-ghost));
-    */
-    box-shadow: 0px 4px 4px 0px var(--black-shadow);
-    opacity: .63;
     margin: 0;
 }
 
 .nav-tab-right {
     width: 36px;
     height: 36px;
-    background: var(--super-white-color);
+    background: none;
     border-radius: 50% 0 0 50%;
     border: none;
     padding: 0;
     transition: .18s;
-    /*
-    filter: drop-shadow(0px 3px 3px var(--black-color-ghost));
-    */
-    box-shadow: 0px 4px 4px 0px var(--black-shadow);
-    opacity: .63;
     margin: 0;
 }
 
@@ -227,7 +218,7 @@ p.tab-text {
     line-height: 1.35;
     border-radius: 3px;
     border: 0px solid pink;
-    padding: 0 0 7px 0;
+    padding: 0 0 0 0;
 }
 
 .art-block {
@@ -627,16 +618,13 @@ input:focus {
 }
 
 .header {
-    height: 36px;
-    font-size: larger;
-    font-weight: normal;
+    height: 45px;
     background: none;
-    padding: 0 6px;
+    margin: 81px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
-
 
 .footer {
     height: 0;
@@ -684,33 +672,57 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--black-color-light);
+    color: var(--gray-color);
     transition-duration: .18s;
-    padding: 3px;
+    padding: 0 18px;
     margin: 0;
     border-radius: 18px;
+}
+
+a.menu {
+    font-size: 21px;
+    font-style: oblique;
+    letter-spacing: .99px;
+    font-family: var(--font-secondary);
+}
+
+a.btn {
+    background: var(--black-color);
+    color: var(--gray-color);
+    border: none;
+    font-size: 18px;
+    font-family: var(--font-secondary);
+    font-style: oblique;
+    font-weight: lighter;
+    border-radius: 36px;
+    padding: 9px 27px 11px 27px;
+    transition-duration: 0.18s;
+    letter-spacing: .99px;
+}
+
+.home-btns {
+    margin: 18px;
 }
 
 button {
     background: var(--black-color);
     color: var(--gray-color);
     border: none;
-    font-size: 20px;
+    font-size: 21px;
     font-family: var(--font-secondary);
     font-style: oblique;
     font-weight: lighter;
-    border-radius: 18px;
-    padding: 9px 18px 11px 18px;
+    border-radius: 36px;
+    padding: 9px 27px 11px 27px;
     margin: 22px 6px;
     transition-duration: 0.18s;
-    letter-spacing: 1.44px;
-    width: 222px;
+    letter-spacing: .99px;
 }
  
 @media (hover: hover) { 
     button:hover { 
     cursor: pointer;
-    opacity: 0.54;
+    opacity: 1;
     } 
 
     a:hover {
@@ -727,13 +739,14 @@ button {
 }
 
 .banner {
+    background: var(--super-white-color);
     font-weight: normal;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 0 36px 0 36px;
-    margin: 18px;
+    margin: 36px 0 0 0;
     min-height: 72px;
 }
 
@@ -788,7 +801,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 9px 0 0 0;
+    margin: 36px 0 81px 0;
 }
 
 .card {
@@ -1038,7 +1051,7 @@ a.card-links {
 
 .arrow {
     border: solid var(--black-color-light);
-    border-width: 0 1px 1px 0;
+    border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 6px;
     margin: 4px 0 0 0;
