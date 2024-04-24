@@ -19,7 +19,7 @@
     --highlight-gradient: linear-gradient(0deg, var(--highlight-color), var(--secondary-color));
     --highlight-gradient-180: linear-gradient(180deg, var(--highlight-color), var(--secondary-color));
 
-    --root-font-size: 16px;
+    --root-font-size: 18px;
     font-size: var(--root-font-size);
 
     --font-primary: 'Helvetica Neue', Helvetica, sans-serif;
@@ -88,7 +88,9 @@ body {
 }
 
 .tagline {
-    margin: 0;
+    margin: auto;
+    padding: 18px;
+    max-width: 540px;
 }
 
 h1 {
@@ -690,14 +692,19 @@ a {
 }
 
 button {
-    background: none;
-    color: var(--dark-color-light);
+    background: var(--black-color);
+    color: var(--gray-color);
     border: none;
-    font-size: 24px;
+    font-size: 20px;
+    font-family: var(--font-secondary);
+    font-style: oblique;
+    font-weight: lighter;
     border-radius: 18px;
-    padding: 0;
-    margin: 0;
+    padding: 9px 18px 11px 18px;
+    margin: 22px 6px;
     transition-duration: 0.18s;
+    letter-spacing: 1.44px;
+    width: 222px;
 }
  
 @media (hover: hover) { 
