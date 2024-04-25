@@ -128,7 +128,6 @@ h2 {
     position: fixed;
     right: 0;
     top: 50%; /* Adjust this value to position it vertically as desired */
-    transform: translateY(-50%); /*Center the element vertically */
 }
 
 .sticky-top-right {
@@ -149,7 +148,6 @@ h2 {
     position: fixed;
     left: 0;
     top: 50%; /* Adjust this value to position it vertically as desired */
-    transform: translateY(-50%); /*Center the element vertically */
 }
 
 .sticky-element-btm {
@@ -160,25 +158,21 @@ h2 {
 }
 
 .nav-tab-left {
-    width: 36px;
-    height: 36px;
     background: none;
     border-radius: 0 50% 50% 0;
     border: none;
     padding: 0;
     transition: .18s;
-    margin: 0;
+    margin: 9px;
 }
 
 .nav-tab-right {
-    width: 36px;
-    height: 36px;
     background: none;
     border-radius: 50% 0 0 50%;
     border: none;
     padding: 0;
     transition: .18s;
-    margin: 0;
+    margin: 9px;
 }
 
 .design-tab {
@@ -728,6 +722,10 @@ button {
     a:hover {
         opacity: .54;
     }
+
+    .card:hover {
+        transform: scale(108%);
+    }
 } 
 
 .underline {
@@ -820,10 +818,6 @@ button {
     transition: .27s;
 }
 
-.card:hover {
-    transform: scale(108%);
-}
-
 .card-large {
     background-color: var(--super-white-color);
     background-size: contain;
@@ -837,18 +831,11 @@ button {
     transition: .27s;
 }
 
-/*
-.card-large:hover {
-    transform: scale(108%);
-}
-*/
-
 a.card-links {
     width: 350px;
     height: 197px;
     background: transparent;
-    border: 0px solid hotpink;
-    box-shadow: 2px 4px 4px 0px rgba(0,0,0,.18);
+    border: none;
     font-size: large;
 }
 
@@ -1050,45 +1037,34 @@ a.card-links {
 }
 
 .arrow {
-    border: solid var(--black-color-light);
-    border-width: 0 2px 2px 0;
+    border: solid var(--gray-color);
+    border-width: 0 1px 1px 0;
     display: inline-block;
-    padding: 6px;
-    margin: 4px 0 0 0;
+    padding: 12px;
+    margin: 0;
 }
   
 .right {
-    transform: rotate(-45deg);  
     -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .left {
-    transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 
 .up {
-    transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
 
 .down {
-    transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 /* 
-
-    is it best practice to list webkit before or after regular transform?
-
-    from what we can recall, it is better to list the *regular* transform
-    property *after* the *webkit* transform property.
-
-*/
-
-/* 
-
-    you are correct. it is best practice to list the *regular* transform
+    it is best practice to list the *regular* transform
     properties *after* the *webkit* or any other legacy transform properties.
-
 */
