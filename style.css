@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'IBMPlexMono';
+    src: url('fonts/ibm-plex-mono/ibm-plex-mono-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexMono';
+    src: url('fonts/ibm-plex-mono/ibm-plex-mono-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 :root {
     --black-shadow: hsl(0, 0%, 0%, 0.18);
     --black-color: hsl(0, 0%, 14%);
@@ -209,7 +223,7 @@ p.tab-text {
     margin: 0 0 0 0;
     text-align: none;
     font-size: 15px;
-    font-family: monospace;
+    font-family: 'IBMPlexMono', monospace;
     color: var(--black-color-light);
     letter-spacing: .18px;
     line-height: 1.35;
@@ -263,7 +277,7 @@ p.tab-text {
 p.article {
     margin: 0 0 0 0;
     font-size: 16px;
-    font-family: monospace;
+    font-family: 'IBMPlexMono', monospace;
     color: var(--black-color-light);
     letter-spacing: .81px;
     line-height: 1.35;
@@ -593,7 +607,7 @@ input:focus {
     text-align: center;
     letter-spacing: .18px;
     font-size: 15px;
-    font-family: monospace;
+    font-family: 'IBMPlexMono', monospace;
     line-height: 1;
     width: 153px;
     margin: 0 0 18px 0;
