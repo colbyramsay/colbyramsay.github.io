@@ -1,69 +1,24 @@
-const movements = [
-    {
-        id: 1,
-        title: "Side A",
-        src: "./songs/01-side-a.mp3",
-        artworkTimeline: [
-            {
-                time: 0,
-                artwork: "./artwork/01-dive-on-in.png",
-            },
-            {
-                time: 169.408,
-                artwork: "./artwork/02-without-chu.png",
-            },
-            {
-                time: 369.912,
-                artwork: "./artwork/03-apple-season.png",
-            },
-            {
-                time: 474.783,
-                artwork: "./artwork/04-dont-worry-baby.png",
-            },
-        ],
-    },
-    {
-        id: 2,
-        title: "Side B",
-        src: "./songs/02-side-b.mp3",
-        artworkTimeline: [
-            {
-                time: 0,
-                artwork: "./artwork/05-untitled.png",
-            },
-            {
-                time: 88.650,
-                artwork: "./artwork/06-round-the-bend.png",
-            },
-            {
-                time: 315.939,
-                artwork: "./artwork/07-just-gotta-be-free.png",
-            },
-            {
-                time: 436.643,
-                artwork: "./artwork/08-coppertone-fox.png",
-            },
-        ],
-    },
-    {
-        id: 3,
-        title: "Catch a Vision",
-        src: "./songs/03-catch-a-vision.mp3",
-        artworkTimeline: [
-            {
-                time: 0,
-                artwork: "./artwork/09-catch-a-vision.png",
-            },
-        ],
-    },
-];
+const album = {
+    title: "Catch a Vision",
+    src: "./songs/catch-a-vision.mp3",
+    artworkTimeline: [
+        { time: 0.000, artwork: "./artwork/01-dive-on-in.png" },
+        { time: 169.408, artwork: "./artwork/02-without-chu.png" },
+        { time: 369.912, artwork: "./artwork/03-apple-season.png" },
+        { time: 474.783, artwork: "./artwork/04-dont-worry-baby.png" },
+        { time: 692.560, artwork: "./artwork/05-untitled.png" },
+        { time: 781.210, artwork: "./artwork/06-round-the-bend.png" },
+        { time: 1008.499, artwork: "./artwork/07-just-gotta-be-free.png" },
+        { time: 1129.203, artwork: "./artwork/08-coppertone-fox.png" },
+        { time: 1326.909, artwork: "./artwork/09-catch-a-vision.png" },
+    ],
+};
 
 const playBtn = document.getElementById("play");
 const artwork = document.getElementById("artwork");
 
 const player = {
-    movements: [...movements],
-    currentMovement: null,
+    started: false,
     currentArtwork: null,
 };
 
@@ -94,13 +49,11 @@ function setPlayButton(isPlaying) {
 setPlayButton(false);
 
 const updateArtwork = () => {
-    if (!player.currentMovement) return;
+    if (!player.started) return;
 
-    const timeline = player.currentMovement.artworkTimeline;
+    let currentArtwork = album.artworkTimeline[0].artwork;
 
-    let currentArtwork = timeline[0].artwork;
-
-    for (const entry of timeline) {
+    for (const entry of album.artworkTimeline) {
         if (audio.currentTime >= entry.time) {
             currentArtwork = entry.artwork;
         } else {
@@ -114,52 +67,38 @@ const updateArtwork = () => {
     }
 };
 
-const playMovement = (id) => {
-    const movement = player.movements.find(item => item.id === id);
-    if (!movement) return;
-
+const playAlbum = () => {
     audio.pause();
 
-    audio.src = movement.src;
-    audio.title = movement.title;
+    audio.src = album.src;
+    audio.title = album.title;
     audio.currentTime = 0;
 
-    player.currentMovement = movement;
+    player.started = true;
     player.currentArtwork = null;
+
     updateArtwork();
 
     audio.play().catch(() => {});
 };
 
-const nextMovement = () => {
-    if (player.currentMovement === null) {
-        playMovement(player.movements[0].id);
-        return;
-    }
+const resetPlayer = () => {
+    audio.pause();
+    audio.currentTime = 0;
+    audio.src = "";
+    audio.title = "";
 
-    const currentMovementIndex = getCurrentMovementIndex();
-    const movement = player.movements[currentMovementIndex + 1];
+    player.started = false;
+    player.currentArtwork = null;
 
-    if (movement) {
-        playMovement(movement.id);
-    } else {
-        audio.pause();
-        audio.currentTime = 0;
-        audio.src = "";
-        audio.title = "";
-        player.currentMovement = null;
-        player.currentArtwork = null;
-        setPlayButton(false);
-    }
+    setPlayButton(false);
 };
-
-const getCurrentMovementIndex = () => player.movements.indexOf(player.currentMovement);
 
 playBtn.addEventListener("click", () => {
 
-    // First click ever
-    if (player.currentMovement === null) {
-        playMovement(player.movements[0].id);
+    // First click
+    if (!player.started) {
+        playAlbum();
         return;
     }
 
@@ -183,7 +122,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 audio.addEventListener("timeupdate", updateArtwork);
-audio.addEventListener("ended", nextMovement);
+audio.addEventListener("ended", resetPlayer);
 
 audio.addEventListener("play", () => {
     setPlayButton(true);
