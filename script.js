@@ -126,8 +126,7 @@ const playMovement = (id) => {
     player.currentArtwork = null;
     updateArtwork();
 
-    setPlayButton(true);
-    audio.play().catch(console.error);
+    audio.play().catch(() => {});
 };
 
 const nextMovement = () => {
@@ -165,13 +164,11 @@ playBtn.addEventListener("click", () => {
     // Already playing → pause
     if (!audio.paused) {
         audio.pause();
-        setPlayButton(false);
         return;
     }
 
     // Paused → resume
-    audio.play();
-    setPlayButton(true);
+    audio.play().catch(() => {});
 
 });
 
@@ -186,3 +183,10 @@ document.addEventListener("keydown", (event) => {
 audio.addEventListener("timeupdate", updateArtwork);
 audio.addEventListener("ended", nextMovement);
 
+audio.addEventListener("play", () => {
+    setPlayButton(true);
+});
+
+audio.addEventListener("pause", () => {
+    setPlayButton(false);
+});
