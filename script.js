@@ -118,6 +118,8 @@ const playMovement = (id) => {
     const movement = player.movements.find(item => item.id === id);
     if (!movement) return;
 
+    audio.pause();
+
     audio.src = movement.src;
     audio.title = movement.title;
     audio.currentTime = 0;
