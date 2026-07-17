@@ -1,75 +1,18 @@
-const allSongs = [
+const movements = [
     {
         id: 1,
-        title: "Dive On In",
-        artist: "Colby Ramsay",
-        duration: "2:49",
-        src: "./songs/01-dive-on-in.mp3",
-        artwork: "./artwork/01-dive-on-in.png",
+        title: "Side A",
+        src: "./songs/01-side-a.mp3",
     },
     {
         id: 2,
-        title: "Without 中",
-        artist: "Colby Ramsay",
-        duration: "3:21",
-        src: "./songs/02-without-chu.mp3",
-        artwork: "./artwork/02-without-chu.png",
+        title: "Side B",
+        src: "./songs/02-side-b.mp3",
     },
     {
         id: 3,
-        title: "Apple Season",
-        artist: "Colby Ramsay",
-        duration: "1:45",
-        src: "./songs/03-apple-season.mp3",
-        artwork: "./artwork/03-apple-season.png",
-    },
-    {
-        id: 4,
-        title: "Don't Worry Baby",
-        artist: "Colby Ramsay",
-        duration: "3:38",
-        src: "./songs/04-dont-worry-baby.mp3",
-        artwork: "./artwork/04-dont-worry-baby.png",
-    },
-    {
-        id: 5,
-        title: "Untitled",
-        artist: "Colby Ramsay",
-        duration: "1:29",
-        src: "./songs/05-untitled.mp3",
-        artwork: "./artwork/05-untitled.png",
-    },
-    {
-        id: 6,
-        title: "Round the Bend",
-        artist: "Colby Ramsay",
-        duration: "2:36",
-        src: "./songs/06-round-the-bend.mp3",
-        artwork: "./artwork/06-round-the-bend.png",
-    },
-    {
-        id: 7,
-        title: "Just Gotta Be Free",
-        artist: "Colby Ramsay",
-        duration: "2:01",
-        src: "./songs/07-just-gotta-be-free.mp3",
-        artwork: "./artwork/07-just-gotta-be-free.png",
-    },
-    {
-        id: 8,
-        title: "Coppertone Fox",
-        artist: "Colby Ramsay",
-        duration: "3:18",
-        src: "./songs/08-coppertone-fox.mp3",
-        artwork: "./artwork/08-coppertone-fox.png",
-    },
-    {
-        id: 9,
         title: "Catch a Vision",
-        artist: "Colby Ramsay",
-        duration: "3:09",
-        src: "./songs/09-catch-a-vision.mp3",
-        artwork: "./artwork/09-catch-a-vision.png",
+        src: "./songs/03-catch-a-vision.mp3",
     },
 ];
 
@@ -77,8 +20,8 @@ const playBtn = document.getElementById("play");
 const artwork = document.getElementById("artwork");
 
 const player = {
-    songs: [...allSongs],
-    currentSong: null,
+    movements: [...movements],
+    currentMovement: null,
 };
 
 const audio = new Audio();
@@ -107,45 +50,48 @@ function setPlayButton(isPlaying) {
 
 setPlayButton(false);
 
-const playSong = (id) => {
-    const song = player.songs.find(track => track.id === id);
-    if (!song) return;
-    audio.src = song.src;
-    audio.title = song.title;
+const playMovement = (id) => {
+    const movement = player.movements.find(item => item.id === id);
+    if (!movement) return;
+
+    audio.src = movement.src;
+    audio.title = movement.title;
     audio.currentTime = 0;
-    player.currentSong = song;
+
+    player.currentMovement = movement;
+
     setPlayButton(true);
-    artwork.src = song.artwork;
     audio.play().catch(console.error);
 };
 
-const nextSong = () => {
-    if (player.currentSong === null) {
-        playSong(player.songs[0].id);
+const nextMovement = () => {
+    if (player.currentMovement === null) {
+        playMovement(player.movements[0].id);
         return;
     }
 
-    const currentSongIndex = getCurrentSongIndex();
-    const nextTrack = player.songs[currentSongIndex + 1];
+    const currentMovementIndex = getCurrentMovementIndex();
+    const movement = player.movements[currentMovementIndex + 1];
 
-    if (nextTrack) {
-        playSong(nextTrack.id);
+    if (movement) {
+        playMovement(movement.id);
     } else {
         audio.pause();
         audio.currentTime = 0;
         audio.src = "";
-        player.currentSong = null;
+        audio.title = "";
+        player.currentMovement = null;
         setPlayButton(false);
     }
 };
 
-const getCurrentSongIndex = () => player.songs.indexOf(player.currentSong);
+const getCurrentMovementIndex = () => player.movements.indexOf(player.currentMovement);
 
 playBtn.addEventListener("click", () => {
 
     // First click ever
-    if (player.currentSong === null) {
-        playSong(player.songs[0].id);
+    if (player.currentMovement === null) {
+        playMovement(player.movements[0].id);
         return;
     }
 
@@ -170,5 +116,5 @@ document.addEventListener("keydown", (event) => {
     playBtn.blur();
 });
 
-audio.addEventListener("ended", nextSong);
+audio.addEventListener("ended", nextMovement);
 
