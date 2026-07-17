@@ -3,16 +3,58 @@ const movements = [
         id: 1,
         title: "Side A",
         src: "./songs/01-side-a.mp3",
+        artworkTimeline: [
+            {
+                time: 0,
+                artwork: "./artwork/01-dive-on-in.png",
+            },
+            {
+                time: 169.408,
+                artwork: "./artwork/02-without-chu.png",
+            },
+            {
+                time: 369.912,
+                artwork: "./artwork/03-apple-season.png",
+            },
+            {
+                time: 474.783,
+                artwork: "./artwork/04-dont-worry-baby.png",
+            },
+        ],
     },
     {
         id: 2,
         title: "Side B",
         src: "./songs/02-side-b.mp3",
+        artworkTimeline: [
+            {
+                time: 0,
+                artwork: "./artwork/05-untitled.png",
+            },
+            {
+                time: 88.650,
+                artwork: "./artwork/06-round-the-bend.png",
+            },
+            {
+                time: 315.939,
+                artwork: "./artwork/07-just-gotta-be-free.png",
+            },
+            {
+                time: 436.643,
+                artwork: "./artwork/08-coppertone-fox.png",
+            },
+        ],
     },
     {
         id: 3,
         title: "Catch a Vision",
         src: "./songs/03-catch-a-vision.mp3",
+        artworkTimeline: [
+            {
+                time: 0,
+                artwork: "./artwork/09-catch-a-vision.png",
+            },
+        ],
     },
 ];
 
@@ -22,6 +64,7 @@ const artwork = document.getElementById("artwork");
 const player = {
     movements: [...movements],
     currentMovement: null,
+    currentArtwork: null,
 };
 
 const audio = new Audio();
@@ -50,6 +93,27 @@ function setPlayButton(isPlaying) {
 
 setPlayButton(false);
 
+const updateArtwork = () => {
+    if (!player.currentMovement) return;
+
+    const timeline = player.currentMovement.artworkTimeline;
+
+    let currentArtwork = timeline[0].artwork;
+
+    for (const entry of timeline) {
+        if (audio.currentTime >= entry.time) {
+            currentArtwork = entry.artwork;
+        } else {
+            break;
+        }
+    }
+
+    if (player.currentArtwork !== currentArtwork) {
+        artwork.src = currentArtwork;
+        player.currentArtwork = currentArtwork;
+    }
+};
+
 const playMovement = (id) => {
     const movement = player.movements.find(item => item.id === id);
     if (!movement) return;
@@ -59,6 +123,8 @@ const playMovement = (id) => {
     audio.currentTime = 0;
 
     player.currentMovement = movement;
+    player.currentArtwork = null;
+    updateArtwork();
 
     setPlayButton(true);
     audio.play().catch(console.error);
@@ -81,6 +147,7 @@ const nextMovement = () => {
         audio.src = "";
         audio.title = "";
         player.currentMovement = null;
+        player.currentArtwork = null;
         setPlayButton(false);
     }
 };
@@ -116,5 +183,6 @@ document.addEventListener("keydown", (event) => {
     playBtn.blur();
 });
 
+audio.addEventListener("timeupdate", updateArtwork);
 audio.addEventListener("ended", nextMovement);
 
