@@ -22,6 +22,54 @@ body {
     font-family: var(--font-primary);
 }
 
+#loading-screen {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #000;
+
+    z-index: 9999;
+}
+
+.loading-content {
+    width: fit-content;
+}
+
+.loading-title {
+    margin-bottom: 1.8rem;
+    text-align: center;
+    color: rgba(255,255,255,.90);
+
+    font-size: .9rem;
+    letter-spacing: .36em;
+    text-transform: uppercase;
+}
+
+.loading-status {
+    margin-bottom: .75rem;
+
+    color: rgba(255,255,255,.63);
+
+    font-size: .9rem;
+    letter-spacing: .03em;
+}
+
+.loading-progress {
+    margin: 0;
+
+    color: rgba(255,255,255,.8);
+
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+    font-size: .95rem;
+    letter-spacing: .05em;
+
+    white-space: pre;
+}
+
 .music-player {
     display: flex;
     flex-direction: column;
