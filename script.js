@@ -16,14 +16,20 @@ const album = {
 
 const playBtn = document.getElementById("play");
 const artwork = document.getElementById("artwork");
+const loadingScreen = document.getElementById("loading-screen");
+const loadingStatus = document.getElementById("loading-status");
+const loadingProgress = document.getElementById("loading-progress");
 
 const player = {
     started: false,
+    initialized: false,
     currentArtwork: null,
 };
 
 const audio = new Audio();
 audio.preload = "auto";
+
+let loadingTimer = null;
 
 const playIcon = `
 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -48,6 +54,46 @@ function setPlayButton(isPlaying) {
 
 setPlayButton(false);
 
+function showLoadingScreen() {
+    loadingScreen.hidden = false;
+}
+
+function hideLoadingScreen() {
+    loadingScreen.hidden = true;
+}
+
+function setLoadingStatus(text) {
+    loadingStatus.textContent = text;
+}
+
+function setLoadingProgress(filled) {
+    const total = 18;
+    loadingProgress.textContent =
+        "█".repeat(filled) + "░".repeat(total - filled);
+}
+
+function resetLoadingScreen() {
+    setLoadingStatus("Loading audio...");
+    setLoadingProgress(0);
+}
+
+function startLoadingScreen() {
+    resetLoadingScreen();
+
+    clearTimeout(loadingTimer);
+    
+    loadingTimer = setTimeout(() => {
+        showLoadingScreen();
+    }, 200);
+}
+
+function stopLoadingScreen() {
+    clearTimeout(loadingTimer);
+    loadingTimer = null;
+
+    hideLoadingScreen();
+}
+
 const updateArtwork = () => {
     if (!player.started) return;
 
@@ -68,27 +114,33 @@ const updateArtwork = () => {
 };
 
 const playAlbum = () => {
+
+    startLoadingScreen();
+
     audio.pause();
 
     audio.src = album.src;
     audio.title = album.title;
     audio.currentTime = 0;
 
-    player.started = true;
     player.currentArtwork = null;
 
-    updateArtwork();
+    artwork.src = album.artworkTimeline[0].artwork;
+    player.currentArtwork = album.artworkTimeline[0].artwork;
 
     audio.play().catch(() => {});
 };
 
 const resetPlayer = () => {
+    stopLoadingScreen();
+
     audio.pause();
     audio.currentTime = 0;
     audio.src = "";
     audio.title = "";
 
     player.started = false;
+    player.initialized = false;
     player.currentArtwork = null;
 
     setPlayButton(false);
@@ -97,7 +149,7 @@ const resetPlayer = () => {
 playBtn.addEventListener("click", () => {
 
     // First click
-    if (!player.started) {
+    if (!player.initialized) {
         playAlbum();
         return;
     }
@@ -130,4 +182,26 @@ audio.addEventListener("play", () => {
 
 audio.addEventListener("pause", () => {
     setPlayButton(false);
+});
+
+audio.addEventListener("canplay", () => {
+    setLoadingStatus("Ready.");
+    setLoadingProgress(18);
+});
+
+audio.addEventListener("playing", () => {
+
+    player.initialized = true;
+    player.started = true;
+
+    stopLoadingScreen();
+});
+
+audio.addEventListener("loadstart", () => {
+    setLoadingProgress(6);
+});
+
+audio.addEventListener("loadedmetadata", () => {
+    setLoadingStatus("Preparing playback...");
+    setLoadingProgress(12);
 });
