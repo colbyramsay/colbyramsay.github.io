@@ -24,6 +24,12 @@ const player = {
     started: false,
     initialized: false,
     currentArtwork: null,
+
+    analytics: {
+        albumStarted: false,
+        halfwayReached: false,
+        albumCompleted: false,
+    },
 };
 
 const audio = new Audio();
@@ -43,6 +49,12 @@ const pauseIcon = `
     <rect x="13.5" y="5" width="3.5" height="14"></rect>
 </svg>
 `;
+
+function trackEvent(eventName) {
+    if (typeof gtag === "function") {
+        gtag("event", eventName);
+    }
+}
 
 function setPlayButton(isPlaying) {
     playBtn.innerHTML = isPlaying ? pauseIcon : playIcon;
