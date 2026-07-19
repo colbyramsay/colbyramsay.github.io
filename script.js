@@ -206,6 +206,8 @@ audio.addEventListener("playing", () => {
     player.initialized = true;
     player.started = true;
 
+    trackEvent("album_start");
+
     stopLoadingScreen();
 });
 
