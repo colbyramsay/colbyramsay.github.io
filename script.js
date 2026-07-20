@@ -109,6 +109,8 @@ function stopLoadingScreen() {
 const updateArtwork = () => {
     if (!player.started) return;
 
+    console.log("updateArtwork", audio.currentTime);
+
     if (
         !player.analytics.halfwayReached &&
         audio.currentTime >= audio.duration / 2
