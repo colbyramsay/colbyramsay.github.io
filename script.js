@@ -170,7 +170,7 @@ const resetPlayer = () => {
 
 playBtn.addEventListener("click", () => {
 
-    // First click
+    // 1st click
     if (!player.initialized) {
         playAlbum();
         return;
