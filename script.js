@@ -109,6 +109,14 @@ function stopLoadingScreen() {
 const updateArtwork = () => {
     if (!player.started) return;
 
+    if (
+        !player.analytics.halfwayReached &&
+        audio.currentTime >= audio.duration / 2
+    ) {
+        trackEvent("album_halfway");
+        player.analytics.halfwayReached = true;
+    }
+
     let currentArtwork = album.artworkTimeline[0].artwork;
 
     for (const entry of album.artworkTimeline) {
