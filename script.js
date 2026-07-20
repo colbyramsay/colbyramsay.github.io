@@ -109,8 +109,6 @@ function stopLoadingScreen() {
 const updateArtwork = () => {
     if (!player.started) return;
 
-    console.log("updateArtwork", audio.currentTime);
-
     if (
         !player.analytics.halfwayReached &&
         audio.currentTime >= audio.duration / 2
@@ -196,7 +194,15 @@ document.addEventListener("keydown", (event) => {
 });
 
 audio.addEventListener("timeupdate", updateArtwork);
-audio.addEventListener("ended", resetPlayer);
+audio.addEventListener("ended", () => {
+
+    if (!player.analytics.albumCompleted) {
+        trackEvent("album_complete");
+        player.analytics.albumCompleted = true;
+    }
+
+    resetPlayer();
+});
 
 audio.addEventListener("play", () => {
     setPlayButton(true);
