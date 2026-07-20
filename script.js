@@ -163,6 +163,10 @@ const resetPlayer = () => {
     player.initialized = false;
     player.currentArtwork = null;
 
+    player.analytics.albumStarted = false;
+    player.analytics.halfwayReached = false;
+    player.analytics.albumCompleted = false;
+
     setPlayButton(false);
 };
 
